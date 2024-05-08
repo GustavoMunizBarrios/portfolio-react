@@ -1,3 +1,4 @@
+import LanguageToggle from "./LanguageToggle"
 
 export default function Header() {
     return (
@@ -26,7 +27,7 @@ export default function Header() {
                 >
                 <a href="#about" className="hover:underline hover:text-[#df5e4d]">About</a>
             </nav>
-            {/* <LanguageToggle /> */}
+            <LanguageToggle />
         </header>
     )
 }
