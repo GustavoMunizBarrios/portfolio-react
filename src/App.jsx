@@ -4,12 +4,16 @@ import Header from './components/Header'
 import Badge from './components/Badge'
 //import { Linkedin, Github, Mail } from './components/Icons'
 import SocialPill from './components/SocialPill'
+import ProjectsIcon from './assets/ProjectsIcon'
 
 function App() {
 
   return (
     <>
       <Header />
+      {/*   <!-- ---------------- -->
+      <!-- Presentation -->
+      <!-- ---------------- --> */}
       <main className='w-full lg:w-[740px] mx-auto py-12 px-4 pt-10'>
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
@@ -98,6 +102,19 @@ function App() {
             Email
           </SocialPill>
         </nav>
+        {/* 
+        <!-- ---------------- -->
+        <!-- Projects Section -->
+        <!-- ---------------- --> */}
+        <section id='projects'>
+          <h2
+            className="text-3xl font-semibold text-gray-900 mb-7 flex gap-x-3 items-center"
+          >
+            <ProjectsIcon className="w-full lg:w-[740px] mx-auto py-12" />
+            Projects
+          </h2>
+          <Projecs />
+        </section>
 
       </main>
     </>
