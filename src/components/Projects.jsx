@@ -1,3 +1,12 @@
+import JavascriptIcon from "../assets/JavascriptIcon";
+import CssIcon from "../assets/CssIcon";
+import HtmlIcon from "../assets/HtmlIcon";
+import TailwindIcon from "../assets/TailwindIcon";
+import ReactIcon from "../assets/ReactIcon";
+import TypescriptIcon from "../assets/TypescriptIcon";
+import ExpressIcon from "../assets/TypescriptIcon";
+import PostgreSQL from "../assets/PostgreSQL";
+
 export default function Projecs() {
     const TAGS = {
         JAVASCRIPT: {
@@ -94,6 +103,47 @@ export default function Projecs() {
             ],
         },
     ];
-    return ()
+    return (
+        <>
+            {
+                PROJECTS.map(({ image, title, description, tags, link, github }) => (
+                    <article className="ml-3">
+                        <div className="flex items-center justify-between">
+                            <h3 class="text-2xl font-semibold text-[#EF8354] mb-2">
+                                {" "}
+                                <a href={link} className="hover:underline">
+                                    {title}
+                                </a>{" "}
+                            </h3>
+                            <div className=" ml-6 mb-4">
+                                <SocialPill href={github}>
+                                    <Github className="size-4 md:size-6 " />
+                                    GitHub
+                                </SocialPill>
+                            </div>
+                        </div>
+                        <p className="text-lg mb-4 text-pretty">{description}</p>
+                        <ul className="flex gap-x-4 flex-row flex-wrap">
+                            {tags.map((tag) => (
+                                <li className="pb-4">
+                                    <span
+                                        className={`flex gap-x-2 border rounded-full text-sm ${tag.class} py-2 px-3`}
+                                    >
+                                        <tag.icon className="size-5 " />
+                                        {tag.name}
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                        <a href={link}>
+                            <img
+                                className="transform hover:scale-105 transition duration-300 ease-in-out"
+                                src={image.src}
+                                alt={`Screenshot of the project ${title}`}
+                            />
+                        </a>
+                    </article>
+                ))
+            }</>)
 
 }
