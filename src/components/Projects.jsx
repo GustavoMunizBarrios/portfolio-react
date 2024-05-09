@@ -4,8 +4,17 @@ import HtmlIcon from "../assets/HtmlIcon";
 import TailwindIcon from "../assets/TailwindIcon";
 import ReactIcon from "../assets/ReactIcon";
 import TypescriptIcon from "../assets/TypescriptIcon";
-import ExpressIcon from "../assets/TypescriptIcon";
+import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
+import Github from "../assets/Github";
+
+import CountriesImage from "../Images/countries_of_the_world.png"
+import RickandmortyImage from "../Images/rickandmorty_wbg_compress.png"
+import CustomcraftImage from "../Images/customcraft01.png"
+import TravelImage from "../Images/travel-list-withoutBG-compress.png"
+import TodoImage from "../Images/TO-DO app.png"
+
+import SocialPill from "./SocialPill";
 
 export default function Projecs() {
     const TAGS = {
@@ -107,16 +116,16 @@ export default function Projecs() {
         <>
             {
                 PROJECTS.map(({ image, title, description, tags, link, github }) => (
-                    <article className="ml-3">
+                    <article className="ml-3" key={title}>
                         <div className="flex items-center justify-between">
-                            <h3 class="text-2xl font-semibold text-[#EF8354] mb-2">
+                            <h3 className="text-2xl font-semibold text-[#EF8354] mb-2">
                                 {" "}
                                 <a href={link} className="hover:underline">
                                     {title}
                                 </a>{" "}
                             </h3>
                             <div className=" ml-6 mb-4">
-                                <SocialPill href={github}>
+                                <SocialPill link={github}>
                                     <Github className="size-4 md:size-6 " />
                                     GitHub
                                 </SocialPill>
@@ -125,7 +134,7 @@ export default function Projecs() {
                         <p className="text-lg mb-4 text-pretty">{description}</p>
                         <ul className="flex gap-x-4 flex-row flex-wrap">
                             {tags.map((tag) => (
-                                <li className="pb-4">
+                                <li className="pb-4" key={tag.name}>
                                     <span
                                         className={`flex gap-x-2 border rounded-full text-sm ${tag.class} py-2 px-3`}
                                     >

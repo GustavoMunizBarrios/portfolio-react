@@ -2,6 +2,7 @@
 import './App.css'
 import Header from './components/Header'
 import Badge from './components/Badge'
+import Projecs from './components/Projects'
 //import { Linkedin, Github, Mail } from './components/Icons'
 import SocialPill from './components/SocialPill'
 import ProjectsIcon from './assets/ProjectsIcon'
