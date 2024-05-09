@@ -22,7 +22,7 @@ export default {
         "linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)",
 
       /* Light Theme */
-      veryLightGray: "hsl(0, 0%, 98%)",
+      veryLightGray: "#777a92",
       veryLightGrayishBlue: "hsl(236, 33%, 92%)",
       lightGrayishBlue: "hsl(233, 11%, 84%)",
       darkGrayishBlue: "hsl(236, 9%, 61%)",
