@@ -109,7 +109,7 @@ function App() {
         <!-- ---------------- --> */}
         <section id='projects'>
           <h2
-            className="text-3xl font-semibold text-gray-900 mb-7 flex gap-x-3 items-center"
+            className="text-3xl font-semibold text-[#1a202c] mb-7 flex gap-x-3 items-center"
           >
             <ProjectsIcon className="w-full lg:w-[740px] mx-auto py-12" />
             Projects

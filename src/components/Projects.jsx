@@ -119,10 +119,10 @@ export default function Projecs() {
                     <article className="ml-3" key={title}>
                         <div className="flex items-center justify-between">
                             <h3 className="text-2xl font-semibold text-[#EF8354] mb-2">
-                                {" "}
+
                                 <a href={link} className="hover:underline">
                                     {title}
-                                </a>{" "}
+                                </a>
                             </h3>
                             <div className=" ml-6 mb-4">
                                 <SocialPill link={github}>
