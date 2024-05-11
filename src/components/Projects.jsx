@@ -20,42 +20,42 @@ export default function Projecs() {
     const TAGS = {
         JAVASCRIPT: {
             name: "JavaScript",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: JavascriptIcon,
         },
         CSS: {
             name: "CSS",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: CssIcon,
         },
         HTML: {
             name: "HTML",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: HtmlIcon,
         },
         TAILWIND: {
             name: "Tailwind CSS",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: TailwindIcon,
         },
         REACT: {
             name: "React",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: ReactIcon,
         },
         TYPESCRIPT: {
             name: "Typescript",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: TypescriptIcon,
         },
         EXPRESS: {
             name: "Express.js",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: ExpressIcon,
         },
         POSTGRESQL: {
             name: "PostgreSQL",
-            class: "text-black",
+            class: "text-[#777a92fa]",
             icon: PostgreSQL,
         },
     };

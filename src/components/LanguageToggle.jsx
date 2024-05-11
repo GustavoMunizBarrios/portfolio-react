@@ -53,7 +53,7 @@ export default function LanguageToggle() {
                         </div>
 
                         <span
-                            className={`border border-veryLightGray shadow flex items-center justify-center w-[50%] rounded-full h-[2.3rem] top-[5px]  absolute -z-[12] ${languageToggle ? 'left-[7px]' : 'right-[7px]'}`}
+                            className={`border border-[#c8891d] shadow flex items-center justify-center w-[50%] rounded-full h-[2.3rem] top-[5px]  absolute -z-[12] ${languageToggle ? 'left-[7px]' : 'right-[7px]'}`}
                         ></span>
 
                     </div >
