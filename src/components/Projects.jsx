@@ -136,7 +136,7 @@ export default function Projecs() {
                             {tags.map((tag) => (
                                 <li className="pb-4" key={tag.name}>
                                     <span
-                                        className={`flex gap-x-2 border rounded-full text-sm ${tag.class} py-2 px-3`}
+                                        className={`flex gap-x-2 border border-[#777a9247] rounded-full text-sm ${tag.class} py-2 px-3`}
                                     >
                                         <tag.icon className="size-5 " />
                                         {tag.name}
@@ -147,7 +147,7 @@ export default function Projecs() {
                         <a href={link}>
                             <img
                                 className="transform hover:scale-105 transition duration-300 ease-in-out"
-                                src={image.src}
+                                src={image}
                                 alt={`Screenshot of the project ${title}`}
                             />
                         </a>
