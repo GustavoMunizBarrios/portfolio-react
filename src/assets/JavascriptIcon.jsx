@@ -1,6 +1,9 @@
-export default function JavascriptIcon() {
+import PropTypes from 'prop-types';
+
+export default function JavascriptIcon({ className }) {
     return (
         <svg
+            className={className}
             xmlns="http://www.w3.org/2000/svg"
             width="2500"
             height="2500"
@@ -10,4 +13,7 @@ export default function JavascriptIcon() {
             fill="#323330"></path></svg
         >
     )
+}
+JavascriptIcon.propTypes = {
+    className: PropTypes.string,
 }

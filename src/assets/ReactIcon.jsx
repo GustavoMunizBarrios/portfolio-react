@@ -1,5 +1,8 @@
-export default function ReactIcon() {
+import PropTypes from 'prop-types';
+
+export default function ReactIcon({ className }) {
     return (<svg
+        className={className}
         viewBox="0 0 256 228"
         width="256"
         height="228"
@@ -10,3 +13,7 @@ export default function ReactIcon() {
         fill="#00D8FF"></path></svg
     >)
 }
+ReactIcon.propTypes = {
+    className: PropTypes.string
+}
+
