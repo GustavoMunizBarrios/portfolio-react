@@ -6,6 +6,9 @@ import Projecs from './components/Projects'
 //import { Linkedin, Github, Mail } from './components/Icons'
 import SocialPill from './components/SocialPill'
 import ProjectsIcon from './assets/ProjectsIcon'
+// import profileCompress from './Images/profileCompress.png'
+import JobIcon from './assets/JobIcon'
+import Timeline from './components/Timeline'
 
 function App() {
 
@@ -15,7 +18,7 @@ function App() {
       {/*   <!-- ---------------- -->
       <!-- Presentation -->
       <!-- ---------------- --> */}
-      <main className='w-full lg:w-[740px] mx-auto py-12 px-4 pt-10'>
+      <main className='w-full lg:w-[740px] mx-auto px-4 pt-[6rem]'>
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
         >
@@ -107,7 +110,7 @@ function App() {
         <!-- ---------------- -->
         <!-- Projects Section -->
         <!-- ---------------- --> */}
-        <section id='projects'>
+        <section id='projects' className='w-full lg:w-[740px] mx-auto py-[8rem]'>
           <h2
             className="text-3xl font-semibold text-[#1a202c] mb-7 flex gap-x-3 items-center"
           >
@@ -115,6 +118,22 @@ function App() {
             Projects
           </h2>
           <Projecs />
+        </section>
+        {/* 
+        <!-- ----------------------------- -->
+        <!-- Experience Section - Timeline  -->
+        <!-- ----------------------------- -->
+        */}
+        <section id='experience' className='w-full lg:w-[740px] mx-auto py-[8rem]'>
+          <h2
+            className="text-3xl font-semibold text-gray-900 mb-7 flex gap-x-3 items-center"
+          >
+            <JobIcon className="size-8" />
+            Work Experience
+          </h2>
+
+          <Timeline />
+
         </section>
 
       </main>
