@@ -6,7 +6,7 @@ export default function Timeline() {
         <ol className="relative border-s border-[#e5e7eb] ml-3">
             {/* dark:border-gray-700 */}
             {/*  PROJECT MANAGER section */}
-            <li className="mb-10 ms-8">
+            <li className="mb-[3.5rem] ms-8">
                 <span
                     className="absolute flex items-center justify-center w-7 h-7 bg-[#dbeafe] rounded-full -start-3 ring-8 ring-[[#fffff]]"
                 >
@@ -22,7 +22,7 @@ export default function Timeline() {
                         Latest</span
                     >
                 </h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-[#9ca3af]">
+                <time className="block mb-4 text-sm font-normal leading-none text-[#9ca3af]">
                     {/*  text-[#a1a1aa] dark:text-gray-500  */}
                     Bommus de Mexico, May. 2021 -
                     Aug. 2022</time
@@ -30,17 +30,17 @@ export default function Timeline() {
                 <p className="mb-4 text-base font-normal text-[#6b7280] text-pretty">
                     {/* dark:text-[#a1a1aa]  */}
                     <ul className="text-[#6b7280] list-disc ml-3">
-                        <li>
+                        <li className="mb-3">
                             Together with my team, we developed a new product from a prototype,
                             covering areas such as hardware and software design, commercial
                             viability and quality testing.
                         </li>
-                        <li>
+                        <li className="mb-3">
                             I was in charge of leading the dissemination of the new product by
                             applying Marketing strategies, revamping the website and creating a
                             new sub-brand.
                         </li>
-                        <li>
+                        <li className="mb-3">
                             The departament I led became the main profit contributor for the
                             company.
                         </li>
@@ -48,7 +48,7 @@ export default function Timeline() {
                 </p>
             </li>
             {/* <!-- PROJECT ENGINEER section --> */}
-            <li className="mb-10 ms-8">
+            <li className="mb-[3.5rem] ms-8">
                 <span
                     className="absolute flex items-center justify-center w-7 h-7 bg-[#dbeafe] rounded-full -start-3 ring-8 ring-[#fffff]"
                 >
@@ -59,19 +59,19 @@ export default function Timeline() {
                     {/* dark:text-[#fffff]  */}
                     Project Engineer
                 </h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-[#a1a1aa]">
+                <time className="block mb-4 text-sm font-normal leading-none text-[#a1a1aa]">
                     {/*  dark:text-gray-500 */}
                     Bommus de Mexico, Mar. 2021 - Abr. 2021
                 </time>
                 <p className="text-base font-normal text-[#71717a] text-pretty">
                     {/* dark:text-[#a1a1aa] */}
                     <ul className="text-[#71717a] list-disc ml-3">
-                        <li>
+                        <li className="mb-3">
                             Preparing , scheduling, coordinating and supervising the project,
                             performing overall quality control of the work, assigning
                             responsibilities and mentoring the project team.
                         </li>
-                        <li>
+                        <li className="mb-3">
                             Succesfully completed the project together with my team, and presented
                             the results achieved, which earned the company another contract with
                             the client.

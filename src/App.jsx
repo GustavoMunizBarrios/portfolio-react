@@ -124,9 +124,9 @@ function App() {
         <!-- Experience Section - Timeline  -->
         <!-- ----------------------------- -->
         */}
-        <section id='experience' className='w-full lg:w-[740px] mx-auto py-[8rem]'>
+        <section id='experience' className='w-full lg:w-[740px] mx-auto pb-[8rem]'>
           <h2
-            className="text-3xl font-semibold text-gray-900 mb-7 flex gap-x-3 items-center"
+            className="text-3xl font-semibold text-gray-900 mb-[3rem] flex gap-x-3 items-center"
           >
             <JobIcon className="size-8" />
             Work Experience
