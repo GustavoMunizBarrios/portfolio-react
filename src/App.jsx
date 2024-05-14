@@ -38,20 +38,19 @@ function App() {
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
         >
-          {"Hey, I'm Gustavo"} <a
+          {languageToggle ? "Hey, I'm Gustavo" : 'Hola, soy Gustavo'} <a
             href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
             target="_blank"
             rel="noopener"
             className="flex justify-center items-center"
           >
-            <Badge>Available for hire</Badge>
+            <Badge>{languageToggle ? 'Available for hire' : 'Disponible para trabajar'}</Badge>
           </a>
         </h1>
         <h2 className="text-xl lg:text-2xl text-wrap max-w-[700px]">
-          {"Welcome! I'm a"} <span className="font-bold text-[#EF8354]"
-          >Web Developer</span
-          > with three years of experience in engineering project development. Feel
-          free to explore my projects to see my skills as a web developer.
+          {languageToggle ? "Welcome! I'm a" : "¡Bienvenido! Soy un"} <span className="font-bold text-[#EF8354]"
+          >{languageToggle ? "Web Developer " : "Desarrollador Web "}</span
+          > {languageToggle ? "with three years of experience in engineering project development. Feel free to explore my projects to see my skills as a web developer." : "con tres años de experiencia en desarrollo de proyectos de ingeniería. Puedes explorar mis proyectos para ver mis habilidades como desarrollador web."}
         </h2>
 
         <nav className="flex gap-4 mt-5 flex-wrap">
@@ -131,9 +130,9 @@ function App() {
             className="text-3xl font-semibold text-[#1a202c] mb-7 flex gap-x-3 items-center"
           >
             <ProjectsIcon className="w-full lg:w-[740px] mx-auto py-12" />
-            Projects
+            {languageToggle ? "Projects" : "Proyectos"}
           </h2>
-          <Projecs />
+          <Projecs languageToggle={languageToggle} />
         </section>
         {/* 
         <!-- ----------------------------- -->

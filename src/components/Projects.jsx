@@ -16,7 +16,8 @@ import TodoImage from "../Images/TO-DO app.png"
 
 import SocialPill from "./SocialPill";
 
-export default function Projecs() {
+// eslint-disable-next-line react/prop-types
+export default function Projecs({ languageToggle }) {
     const TAGS = {
         JAVASCRIPT: {
             name: "JavaScript",
@@ -62,8 +63,7 @@ export default function Projecs() {
     const PROJECTS = [
         {
             title: "Countries of the world",
-            description:
-                "Project that gathers an extensive database with information of all the countries of the world, from its population to its extension, you can also save information about the activities that you can do in each of the countries. The application is fully responsive.",
+            description: languageToggle ? "Project that gathers an extensive database with information of all the countries of the world, from its population to its extension, you can also save information about the activities that you can do in each of the countries. The application is fully responsive." : "Proyecto que recoge una extensa base de datos con información de todos los países del mundo, desde su población hasta su extensión, también puedes guardar información sobre las actividades que puedes realizar en cada uno de los países. La aplicación es totalmente responsive",
             link: "https://pi-countries-frontend-production.up.railway.app/",
             github: "https://github.com/GustavoMunizBarrios/pi-countries-frontend",
             image: CountriesImage,
@@ -71,8 +71,7 @@ export default function Projecs() {
         },
         {
             title: "Rick and Morty wiki",
-            description:
-                "Compilation of characters from the Rick and Morty series, the application has different filters to sort characters, and a search bar.",
+            description: languageToggle ? "Compilation of characters from the Rick and Morty series, the application has different filters to sort characters, and a search bar." : "Recopilación de personajes de la serie Rick y Morty, la aplicación cuenta con diferentes filtros para ordenar los personajes, y una barra de búsqueda.",
             link: "https://rick-and-morty-frontend-production.up.railway.app/",
             github: "https://github.com/GustavoMunizBarrios/rick-and-morty-",
             image: RickandmortyImage,
@@ -80,8 +79,7 @@ export default function Projecs() {
         },
         {
             title: "TO-DO app",
-            description:
-                "The TO-DO app is great for all those activities you can't forget. From feeding your dog to grocery shopping, don't miss a thing with this app.",
+            description: languageToggle ? "The TO-DO app is great for all those activities you can't forget. From feeding your dog to grocery shopping, don't miss a thing with this app." : "La aplicación TO-DO es genial para todas esas actividades que no puedes olvidar. Desde dar de comer al perro hasta hacer la compra, que no se te pase nada con esta app",
             link: "https://todo-app-one-dun.vercel.app/",
             github: "https://github.com/GustavoMunizBarrios/todo-app",
             image: TodoImage,
@@ -89,8 +87,7 @@ export default function Projecs() {
         },
         {
             title: "Packing List",
-            description:
-                "Travel List is a perfect application for those trips where you can't forget anything. It records the amount and items you need, you can mark them as packed or delete them if you have made a mistake. You can also sort them by description or status. At the bottom you can see how many items you have left to pack.",
+            description: languageToggle ? "Travel List is a perfect application for those trips where you can't forget anything. It records the amount and items you need, you can mark them as packed or delete them if you have made a mistake. You can also sort them by description or status. At the bottom you can see how many items you have left to pack." : "Travel List es una aplicación perfecta para esos viajes en los que no puedes olvidar nada. Registra la cantidad y los artículos que necesitas, puedes marcarlos como empaquetados o borrarlos si te has equivocado.También puedes ordenarlos por descripción o estado.En la parte inferior puedes ver cuántos artículos te quedan por empaquetar",
             link: "https://travel-list-pi-two.vercel.app/",
             github: "https://github.com/GustavoMunizBarrios/travel-list",
             image: TravelImage,
@@ -98,8 +95,7 @@ export default function Projecs() {
         },
         {
             title: "Custom Craft",
-            description:
-                "Custom Craft is an online store where you can pre-visualize your clothes in a 3D model with the possibility to customize your own clothes, adding color and size.",
+            description: languageToggle ? "Custom Craft is an online store where you can pre-visualize your clothes in a 3D model with the possibility to customize your own clothes, adding color and size." : "Custom Craft es una tienda online donde puedes pre-visualizar tu ropa en un modelo 3D y con la que tienes la posibilidad de personalizar tu prenda en tiempo real, añadiendo color y talla.",
             link: "https://proyecto-final-eight-beige.vercel.app/",
             github: "https://github.com/fedeMaidana/Proyecto_Final",
             image: CustomcraftImage,
