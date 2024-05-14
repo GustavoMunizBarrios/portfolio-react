@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Badge from './components/Badge'
@@ -13,9 +13,24 @@ import Footer from './components/Footer'
 
 function App() {
 
+  const [languageToggle, setLanguageToggle] = useState(true)
+
+  const handleLanguageEN = () => {
+    setLanguageToggle(true)
+    //console.log(`Estado true EN: ${languageToggle}`);
+  }
+  const handleLanguageES = () => {
+    setLanguageToggle(false)
+    //console.log(`Estado false ES: ${languageToggle}`);
+  }
+
+
   return (
     <>
-      <Header />
+      <Header
+        languageToggle={languageToggle}
+        handleLanguageEN={handleLanguageEN}
+        handleLanguageES={handleLanguageES} />
       {/*   <!-- ---------------- -->
       <!-- Presentation -->
       <!-- ---------------- --> */}

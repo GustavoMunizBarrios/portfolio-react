@@ -1,17 +1,18 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+//import { useState } from "react";
 
-export default function LanguageToggle() {
+export default function LanguageToggle({ languageToggle, handleLanguageEN, handleLanguageES }) {
 
-    const [languageToggle, setLanguageToggle] = useState(true)
-
-    const handleLanguageEN = () => {
-        setLanguageToggle(true)
-        console.log(`Estado true EN: ${languageToggle}`);
-    }
-    const handleLanguageES = () => {
-        setLanguageToggle(false)
-        console.log(`Estado false ES: ${languageToggle}`);
-    }
+    /*     const [languageToggle, setLanguageToggle] = useState(true)
+    
+        const handleLanguageEN = () => {
+            setLanguageToggle(true)
+            //console.log(`Estado true EN: ${languageToggle}`);
+        }
+        const handleLanguageES = () => {
+            setLanguageToggle(false)
+            //console.log(`Estado false ES: ${languageToggle}`);
+        } */
 
     return (
         <>

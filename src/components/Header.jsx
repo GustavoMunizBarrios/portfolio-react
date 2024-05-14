@@ -1,6 +1,7 @@
 import LanguageToggle from "./LanguageToggle"
 
-export default function Header() {
+// eslint-disable-next-line react/prop-types
+export default function Header({ languageToggle, handleLanguageEN, handleLanguageES }) {
     return (
         <header
             className="sticky top-0 z-20 flex justify-center items-center py-5 w-[100%] mx-auto
@@ -27,7 +28,10 @@ export default function Header() {
                 >
                 <a href="#about" className="hover:underline hover:text-[#df5e4d]">About</a>
             </nav>
-            <LanguageToggle />
+            <LanguageToggle
+                languageToggle={languageToggle}
+                handleLanguageEN={handleLanguageEN}
+                handleLanguageES={handleLanguageES} />
         </header>
     )
 }
