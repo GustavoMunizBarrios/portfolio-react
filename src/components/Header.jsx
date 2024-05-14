@@ -20,13 +20,10 @@ export default function Header({ languageToggle, handleLanguageEN, handleLanguag
             </a>
 
             <nav className="flex flex-row gap-x-10 z-50">
-                <a href="/" className="hover:underline hover:text-[#df5e4d]">Home</a>
-                <a href="#projects" className="hover:underline hover:text-[#df5e4d]">Projects</a
-                >
-                <a href="#experience" className="hover:underline hover:text-[#df5e4d]"
-                >Experience</a
-                >
-                <a href="#about" className="hover:underline hover:text-[#df5e4d]">About</a>
+                <a href="/" className="hover:underline hover:text-[#df5e4d]">{languageToggle ? 'Home' : 'Inicio'}</a>
+                <a href="#projects" className="hover:underline hover:text-[#df5e4d]">{languageToggle ? 'Projects' : 'Proyectos'}</a>
+                <a href="#experience" className="hover:underline hover:text-[#df5e4d]">{languageToggle ? 'Experience' : 'Experiencia'}</a>
+                <a href="#about" className="hover:underline hover:text-[#df5e4d]">{languageToggle ? 'About me' : 'Acerca de mí'}</a>
             </nav>
             <LanguageToggle
                 languageToggle={languageToggle}
