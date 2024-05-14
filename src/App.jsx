@@ -9,6 +9,7 @@ import ProjectsIcon from './assets/ProjectsIcon'
 import profileCompress from './Images/profileCompress.png'
 import JobIcon from './assets/JobIcon'
 import Timeline from './components/Timeline'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -168,6 +169,7 @@ function App() {
         </section>
 
       </main>
+      <Footer />
     </>
   )
 }
