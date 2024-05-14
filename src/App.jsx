@@ -6,7 +6,7 @@ import Projecs from './components/Projects'
 //import { Linkedin, Github, Mail } from './components/Icons'
 import SocialPill from './components/SocialPill'
 import ProjectsIcon from './assets/ProjectsIcon'
-// import profileCompress from './Images/profileCompress.png'
+import profileCompress from './Images/profileCompress.png'
 import JobIcon from './assets/JobIcon'
 import Timeline from './components/Timeline'
 
@@ -124,9 +124,9 @@ function App() {
         <!-- Experience Section - Timeline  -->
         <!-- ----------------------------- -->
         */}
-        <section id='experience' className='w-full lg:w-[740px] mx-auto pb-[8rem]'>
+        <section id='experience' className='w-full lg:w-[740px] mx-auto pb-[6rem]'>
           <h2
-            className="text-3xl font-semibold text-gray-900 mb-[3rem] flex gap-x-3 items-center"
+            className="text-3xl font-semibold text-[#111827] mb-[3rem] flex gap-x-3 items-center"
           >
             <JobIcon className="size-8" />
             Work Experience
@@ -134,6 +134,37 @@ function App() {
 
           <Timeline />
 
+        </section>
+        {/*     
+        <!-- ----------------------------- -->
+        <!-- ------ About Me section ----- -->
+        <!-- ----------------------------- --> 
+        */}
+        <section id="about" className='w-full lg:w-[740px] mx-auto pb-[8rem] '>
+          <h2
+            className="text-3xl font-semibold text-[#111827] mb-7 flex gap-x-3 items-center"
+          >
+            <JobIcon className="size-8" />
+            About Me
+          </h2>
+          <div className="flex items-center">
+            <img
+              className="mr-5 rounded-full size-[10rem] z-50 transform transition-all duration-200 hover:scale-110"
+              src={profileCompress}
+              alt="profile of Gustavo"
+            />
+            <p className="text-gray-700 text-lg mt-5 pl-4">
+              Hi! {"I'm "}<span className="font-bold text-[#ef8354]">Gustavo Muñiz</span> I am
+              a web developer and I have 3 years of experience in engineering project
+              development, {"I've"} had the opportunity to work in different areas and
+              develop skills in project management, programming and agile methodologies.
+              <br />
+              <br />
+              I am focused on <span className="font-bold text-[#1e40af]">Front-end </span
+              > development. I have experience doing multiple projects and have worked
+              in a real development environment with a team of developers.
+            </p>
+          </div>
         </section>
 
       </main>
