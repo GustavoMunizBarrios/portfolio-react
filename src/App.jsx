@@ -144,10 +144,10 @@ function App() {
             className="text-3xl font-semibold text-[#111827] mb-[3rem] flex gap-x-3 items-center"
           >
             <JobIcon className="size-8" />
-            Work Experience
+            {languageToggle ? "Work Experience" : "Experiencia Laboral"}
           </h2>
 
-          <Timeline />
+          <Timeline languageToggle={languageToggle} />
 
         </section>
         {/*     

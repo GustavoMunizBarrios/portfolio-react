@@ -1,6 +1,7 @@
 import JobIcon from "../assets/JobIcon"
 
-export default function Timeline() {
+// eslint-disable-next-line react/prop-types
+export default function Timeline({ languageToggle }) {
     return (
 
         <ol className="relative border-s border-[#e5e7eb] ml-3">
@@ -15,34 +16,25 @@ export default function Timeline() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-[#111827]">
                     {/*  dark:text-[#fffff] */}
-                    Project Manager <span
+                    {languageToggle ? "Project Manager" : "Jefe de Proyectos"} <span
                         className="bg-[#dbeafe] text-[#1e40af] text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3"
                     >
                         {/* dark:bg-blue-900 dark:text-blue-300 */}
-                        Latest</span
+                        {languageToggle ? "Latest" : "Último"}</span
                     >
                 </h3>
                 <time className="block mb-4 text-sm font-normal leading-none text-[#9ca3af]">
                     {/*  text-[#a1a1aa] dark:text-gray-500  */}
-                    Bommus de Mexico, May. 2021 -
-                    Aug. 2022</time
-                >
+                    {languageToggle ? "Bommus de Mexico, May. 2021 -  Aug. 2022" : "Bommus de México, May. 2021 - Ago. 2022"} </time>
                 <p className="mb-4 text-base font-normal text-[#6b7280] text-pretty">
                     {/* dark:text-[#a1a1aa]  */}
                     <ul className="text-[#6b7280] list-disc ml-3">
                         <li className="mb-3">
-                            Together with my team, we developed a new product from a prototype,
-                            covering areas such as hardware and software design, commercial
-                            viability and quality testing.
+                            {languageToggle ? "Together with my team, we developed a new product from a prototype, covering areas such as hardware and software design, commercial viability and quality testing." : "Junto con mi equipo, desarrollamos un nuevo producto a partir de un prototipo, abarcando áreas como el diseño de hardware y software, la viabilidad comercial y las pruebas de calidad"}
                         </li>
-                        <li className="mb-3">
-                            I was in charge of leading the dissemination of the new product by
-                            applying Marketing strategies, revamping the website and creating a
-                            new sub-brand.
+                        <li className="mb-3">{languageToggle ? "I was in charge of leading the dissemination of the new product by applying Marketing strategies, revamping the website and creating a new sub-brand." : "Me encargué de dirigir la difusión del nuevo producto aplicando estrategias de marketing, renovando el sitio web y creando una nueva submarca."}
                         </li>
-                        <li className="mb-3">
-                            The departament I led became the main profit contributor for the
-                            company.
+                        <li className="mb-3"> {languageToggle ? "The departament I led became the main profit contributor for the company." : "El departamento que dirigí se convirtió en el principal contribuyente de ganancias de la empresa."}
                         </li>
                     </ul>
                 </p>
@@ -57,7 +49,7 @@ export default function Timeline() {
                 </span>
                 <h3 className="mb-1 text-lg font-semibold text-[#18181b]">
                     {/* dark:text-[#fffff]  */}
-                    Project Engineer
+                    {languageToggle ? "Project Engineer" : "Ingeniero de Proyectos"}
                 </h3>
                 <time className="block mb-4 text-sm font-normal leading-none text-[#a1a1aa]">
                     {/*  dark:text-gray-500 */}
@@ -66,15 +58,8 @@ export default function Timeline() {
                 <p className="text-base font-normal text-[#71717a] text-pretty">
                     {/* dark:text-[#a1a1aa] */}
                     <ul className="text-[#71717a] list-disc ml-3">
-                        <li className="mb-3">
-                            Preparing , scheduling, coordinating and supervising the project,
-                            performing overall quality control of the work, assigning
-                            responsibilities and mentoring the project team.
-                        </li>
-                        <li className="mb-3">
-                            Succesfully completed the project together with my team, and presented
-                            the results achieved, which earned the company another contract with
-                            the client.
+                        <li className="mb-3">{languageToggle ? "Preparing , scheduling, coordinating and supervising the project, performing overall quality control of the work, assigning responsibilities and mentoring the project team." : "Preparar, programar, coordinar y supervisar el proyecto, realizar el control de calidad general del trabajo, asignar responsabilidades y orientar al equipo del proyecto."} </li>
+                        <li className="mb-3">{languageToggle ? "Succesfully completed the project together with my team, and presented the results achieved, which earned the company another contract with the client." : "Completé con éxito el proyecto junto con mi equipo, y presenté los resultados obtenidos, lo que le hizo ganar a la empresa otro contrato con el cliente."}
                         </li>
                     </ul>
                 </p>
