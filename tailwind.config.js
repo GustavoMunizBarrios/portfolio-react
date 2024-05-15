@@ -12,6 +12,12 @@ export default {
       md: "768px",
       lg: "976px",
       xl: "1440px",
+
+      xsm: { 'max': '374px' },
+      smm: { 'max': "480px" },
+      mdm: { 'max': "768px" },
+      lgm: { 'max': "976px" },
+      xlm: { 'max': "1440px" },
     },
     colors: {
       /* Primary */

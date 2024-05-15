@@ -34,7 +34,7 @@ function App() {
       {/*   <!-- ---------------- -->
       <!-- Presentation -->
       <!-- ---------------- --> */}
-      <main className='w-full lg:w-[740px] mx-auto px-4 pt-[6rem]'>
+      <main className='w-full lg:w-[740px] mx-auto px-4 pt-[6rem] mdm:px-10'>
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
         >
@@ -160,7 +160,7 @@ function App() {
             className="text-3xl font-semibold text-[#111827] mb-7 flex gap-x-3 items-center"
           >
             <JobIcon className="size-8" />
-            About Me
+            {languageToggle ? "About Me" : "Acerca de mí"}
           </h2>
           <div className="flex items-center">
             <img

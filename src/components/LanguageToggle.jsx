@@ -3,20 +3,9 @@
 
 export default function LanguageToggle({ languageToggle, handleLanguageEN, handleLanguageES }) {
 
-    /*     const [languageToggle, setLanguageToggle] = useState(true)
-    
-        const handleLanguageEN = () => {
-            setLanguageToggle(true)
-            //console.log(`Estado true EN: ${languageToggle}`);
-        }
-        const handleLanguageES = () => {
-            setLanguageToggle(false)
-            //console.log(`Estado false ES: ${languageToggle}`);
-        } */
-
     return (
         <>
-            <div className="w-[12rem] h-[3rem] ml-[2.5rem] flex text-center content-center items-center rounded-full">
+            <div className="w-[12rem] h-[3rem] ml-[2.5rem] flex text-center content-center items-center rounded-full mdm:pt-4">
                 <div
                     className="w-full h-[3rem] flex rounded-full items-center content-center"
                 >

@@ -6,10 +6,11 @@ export default function Header({ languageToggle, handleLanguageEN, handleLanguag
         <header
             className="sticky top-0 z-20 flex justify-center items-center py-5 w-[100%] mx-auto
             text-lg
-            bg-[#4384da80] bg-opacity-50 backdrop-blur-[10px]"
+            bg-[#4384da80] bg-opacity-50 backdrop-blur-[10px]
+            mdm:flex-col"
         >
             <a
-                className="relative mr-10 hidden xs:block z-50"
+                className="relative mr-10 hidden md:block z-50"
                 href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
             >
                 <img
