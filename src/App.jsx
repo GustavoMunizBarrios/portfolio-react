@@ -164,7 +164,7 @@ function App() {
           </h2>
           <div className="flex items-center smm:flex-col">
             <img
-              className="mr-5 rounded-full size-[10rem] z-50 transform transition-all duration-200 hover:scale-110"
+              className="mr-5 rounded-full size-[10rem] -z-30 transform transition-all duration-200 hover:scale-110"
               src={profileCompress}
               alt="profile of Gustavo"
             />
