@@ -34,7 +34,7 @@ function App() {
       {/*   <!-- ---------------- -->
       <!-- Presentation -->
       <!-- ---------------- --> */}
-      <main className='w-full lg:w-[740px] mx-auto px-4 pt-[6rem] mdm:px-10'>
+      <main className='w-full lg:w-[740px] mx-auto px-4 pt-[6rem] smm:px-3 mdm:px-10 '>
         <h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
         >
@@ -155,14 +155,14 @@ function App() {
         <!-- ------ About Me section ----- -->
         <!-- ----------------------------- --> 
         */}
-        <section id="about" className='w-full lg:w-[740px] mx-auto py-[8rem] '>
+        <section id="about" className='w-full lg:w-[740px] mx-auto py-[8rem]'>
           <h2
             className="text-3xl font-semibold text-[#111827] mb-7 flex gap-x-3 items-center"
           >
             <JobIcon className="size-8" />
             {languageToggle ? "About Me" : "Acerca de mí"}
           </h2>
-          <div className="flex items-center">
+          <div className="flex items-center smm:flex-col">
             <img
               className="mr-5 rounded-full size-[10rem] z-50 transform transition-all duration-200 hover:scale-110"
               src={profileCompress}

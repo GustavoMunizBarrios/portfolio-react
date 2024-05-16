@@ -10,7 +10,7 @@ export default function Header({ languageToggle, handleLanguageEN, handleLanguag
             mdm:flex-col"
         >
             <a
-                className="relative mr-10 hidden md:block z-50"
+                className="relative mr-10 mdm:hidden z-50"
                 href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
             >
                 <img
