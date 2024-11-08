@@ -1,10 +1,8 @@
 /* eslint-disable no-dupe-keys */
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./index.html"
-  ],
+  darkMode: "class",
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
     screens: {
       xs: "374px",
@@ -13,11 +11,11 @@ export default {
       lg: "976px",
       xl: "1440px",
 
-      xsm: { 'max': '374px' },
-      smm: { 'max': "480px" },
-      mdm: { 'max': "768px" },
-      lgm: { 'max': "976px" },
-      xlm: { 'max': "1440px" },
+      xsm: { max: "374px" },
+      smm: { max: "480px" },
+      mdm: { max: "768px" },
+      lgm: { max: "976px" },
+      xlm: { max: "1440px" },
     },
     colors: {
       /* Primary */

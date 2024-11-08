@@ -9,6 +9,7 @@ export default function Header({
   languageToggle,
   handleLanguageEN,
   handleLanguageES,
+  toggleTheme,
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,6 +72,8 @@ export default function Header({
           handleLanguageES={handleLanguageES}
           isOpen={isOpen}
         />
+
+        <button onClick={toggleTheme}>theme</button>
       </div>
     </header>
   );
