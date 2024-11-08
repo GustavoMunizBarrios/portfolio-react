@@ -10,13 +10,21 @@ export default function Header({
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const isOpenStyle = isOpen
+    ? "flex items-center flex-wrap justify-center"
+    : "flex items-center";
+
+  const isOpenStyleNav = isOpen
+    ? "flex flex-row gap-x-10 z-50 md:hidden w-full justify-center my-3"
+    : "flex flex-row gap-x-10 z-50 mdm:hidden";
+
   return (
     <header
       className="sticky top-0 z-20 flex justify-center items-center py-5 w-[100%] mx-auto
             text-lg
             bg-[#4384da80] bg-opacity-50 backdrop-blur-[10px] "
     >
-      <div className="flex items-center">
+      <div className={isOpenStyle}>
         <a
           className="relative mr-10  z-50"
           href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
@@ -28,7 +36,11 @@ export default function Header({
           />
         </a>
 
-        <nav className="flex flex-row gap-x-10 z-50 mdm:hidden">
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+          {isOpen ? "X" : "☰"}
+        </button>
+
+        <nav className={isOpenStyleNav}>
           <a href="/" className="hover:underline hover:text-[#df5e4d]">
             {languageToggle ? "Home" : "Inicio"}
           </a>
@@ -53,29 +65,6 @@ export default function Header({
           isOpen={isOpen}
         />
       </div>
-      <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-        {isOpen ? "X" : "☰"}
-      </button>
-
-      {isOpen && (
-        <nav className="flex flex-row gap-x-10 z-50 md:hidden">
-          <a href="/" className="hover:underline hover:text-[#df5e4d]">
-            {languageToggle ? "Home" : "Inicio"}
-          </a>
-          <a href="#projects" className="hover:underline hover:text-[#df5e4d]">
-            {languageToggle ? "Projects" : "Proyectos"}
-          </a>
-          <a
-            href="#experience"
-            className="hover:underline hover:text-[#df5e4d]"
-          >
-            {languageToggle ? "Experience" : "Experiencia"}
-          </a>
-          <a href="#about" className="hover:underline hover:text-[#df5e4d]">
-            {languageToggle ? "About me" : "Acerca de mí"}
-          </a>
-        </nav>
-      )}
     </header>
   );
 }
