@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import LanguageToggle from "./LanguageToggle";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 export default function Header({
   languageToggle,
@@ -21,8 +23,7 @@ export default function Header({
   return (
     <header
       className="sticky top-0 z-20 flex justify-center items-center py-5 w-[100%] mx-auto
-            text-lg
-            bg-[#4384da80] bg-opacity-50 backdrop-blur-[10px] "
+            text-lg bg-opacity-50 backdrop-blur-[10px] border-b border-black"
     >
       <div className={isOpenStyle}>
         <a
@@ -39,7 +40,11 @@ export default function Header({
         <h1 className="md:hidden text-xl font-bold">Gustavo Muñiz</h1>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-          {isOpen ? "X" : "☰"}
+          {isOpen ? (
+            <IoClose className="text-3xl" />
+          ) : (
+            <IoMenu className="text-3xl" />
+          )}
         </button>
 
         <nav className={isOpenStyleNav}>
