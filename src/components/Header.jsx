@@ -11,8 +11,8 @@ export default function Header({
   const [isOpen, setIsOpen] = useState(false);
 
   const isOpenStyle = isOpen
-    ? "flex items-center flex-wrap justify-center"
-    : "flex items-center";
+    ? "flex items-center flex-wrap justify-center space-x-8"
+    : "flex items-center space-x-8";
 
   const isOpenStyleNav = isOpen
     ? "flex flex-row gap-x-10 z-50 md:hidden w-full justify-center my-3"
@@ -26,7 +26,7 @@ export default function Header({
     >
       <div className={isOpenStyle}>
         <a
-          className="relative mr-10  z-50"
+          className="relative md:mr-10  z-50"
           href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
         >
           <img
@@ -35,6 +35,8 @@ export default function Header({
             alt="profile of Gustavo"
           />
         </a>
+
+        <h1 className="md:hidden text-xl font-bold">Gustavo Muñiz</h1>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           {isOpen ? "X" : "☰"}
