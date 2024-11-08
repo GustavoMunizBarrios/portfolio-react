@@ -17,7 +17,7 @@ export default function Header({
     : "flex items-center space-x-8";
 
   const isOpenStyleNav = isOpen
-    ? "flex flex-row gap-x-10 z-50 md:hidden w-full justify-center my-3"
+    ? "flex flex-row gap-x-9 z-50 md:hidden w-full justify-center my-3 text-[0.9rem]"
     : "flex flex-row gap-x-10 z-50 mdm:hidden";
 
   return (
