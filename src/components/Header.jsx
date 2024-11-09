@@ -42,12 +42,11 @@ export default function Header({
 
         <h1 className="md:hidden text-xl font-bold">Gustavo Muñiz</h1>
 
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-          {isOpen ? (
-            <IoIosArrowUp className="text-3xl" />
-          ) : (
-            <IoMenu className="text-3xl" />
-          )}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-3xl"
+        >
+          {isOpen ? <IoIosArrowUp /> : <IoMenu />}
         </button>
 
         <nav className={isOpenStyleNav}>
