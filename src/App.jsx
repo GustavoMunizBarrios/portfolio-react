@@ -14,16 +14,13 @@ import Footer from "./components/Footer";
 function App() {
   const [languageToggle, setLanguageToggle] = useState(true);
 
-  //const [darkMode, setDarkMode] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   const handleLanguageEN = () => {
     setLanguageToggle(true);
-    //console.log(`Estado true EN: ${languageToggle}`);
   };
   const handleLanguageES = () => {
     setLanguageToggle(false);
-    //console.log(`Estado false ES: ${languageToggle}`);
   };
 
   const toggleTheme = () => {
@@ -47,6 +44,7 @@ function App() {
         handleLanguageEN={handleLanguageEN}
         handleLanguageES={handleLanguageES}
         toggleTheme={toggleTheme}
+        theme={theme}
       />
       {/*   <!-- ---------------- -->
       <!-- Presentation -->

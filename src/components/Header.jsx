@@ -2,14 +2,16 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import LanguageToggle from "./LanguageToggle";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { IoMenu, IoMoon } from "react-icons/io5";
+import { IoSunny } from "react-icons/io5";
+import { IoIosArrowUp } from "react-icons/io";
 
 export default function Header({
   languageToggle,
   handleLanguageEN,
   handleLanguageES,
   toggleTheme,
+  theme,
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,7 +30,7 @@ export default function Header({
     >
       <div className={isOpenStyle}>
         <a
-          className="relative md:mr-10  z-50"
+          className="relative  z-50"
           href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
         >
           <img
@@ -42,7 +44,7 @@ export default function Header({
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           {isOpen ? (
-            <IoClose className="text-3xl" />
+            <IoIosArrowUp className="text-3xl" />
           ) : (
             <IoMenu className="text-3xl" />
           )}
@@ -73,7 +75,9 @@ export default function Header({
           isOpen={isOpen}
         />
 
-        <button onClick={toggleTheme}>theme</button>
+        <button onClick={toggleTheme} className="text-2xl ">
+          {theme === "light" ? <IoMoon /> : <IoSunny />}
+        </button>
       </div>
     </header>
   );
