@@ -33,6 +33,8 @@ export default {
       veryDarkGrayishBlue: "hsl(235, 19%, 35%)",
 
       /* Dark Theme */
+      githubThemePrincipal: "#0d1117",
+      githubThemeSecondary: "#3d444d",
       veryDarkBlue: "hsl(235, 21%, 11%)",
       veryDarkDesaturatedBlue: "hsl(235, 24%, 19%)",
       lightGrayishBlue: "hsl(234, 39%, 85%)",
