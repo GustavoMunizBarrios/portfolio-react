@@ -1,4 +1,12 @@
-export default function ProjectsIcon() {
+/* eslint-disable react/prop-types */
+export default function ProjectsIcon({ theme = "light" }) {
+  const colors = {
+    dark: "#e4e5f1",
+    light: "#2c3e50",
+  };
+
+  const color = colors[theme];
+
   return (
     <svg
       className="size-8 "
@@ -7,7 +15,7 @@ export default function ProjectsIcon() {
       height="44"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke={"#2c3e50"}
+      stroke={color}
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
