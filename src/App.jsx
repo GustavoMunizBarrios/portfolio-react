@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import Projecs from "./components/Projects";
-import ProjectsIcon from "./assets/ProjectsIcon";
 import profileCompress from "./Images/profileCompress.png";
 import JobIcon from "./assets/JobIcon";
 import Timeline from "./components/Timeline";
 import Footer from "./components/Footer";
 import Presentation from "./components/Presentation";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
   const [languageToggle, setLanguageToggle] = useState(true);
@@ -46,20 +45,8 @@ function App() {
       />
       <main className="w-full lg:w-[740px] mx-auto px-4 pt-[6rem] smm:px-3 mdm:px-10 ">
         <Presentation languageToggle={languageToggle} />
-        {/* 
-        <!-- ---------------- -->
-        <!-- Projects Section -->
-        <!-- ---------------- --> */}
-        <section
-          id="projects"
-          className="w-full lg:w-[740px] mx-auto pt-[8rem]"
-        >
-          <h2 className="text-3xl font-semibold text-[#1a202c] mb-7 flex gap-x-3 items-center">
-            <ProjectsIcon className="w-full lg:w-[740px] mx-auto py-12" />
-            {languageToggle ? "Projects" : "Proyectos"}
-          </h2>
-          <Projecs languageToggle={languageToggle} />
-        </section>
+
+        <ProjectsSection languageToggle={languageToggle} />
         {/* 
         <!-- ----------------------------- -->
         <!-- Experience Section - Timeline  -->
@@ -69,7 +56,7 @@ function App() {
           id="experience"
           className="w-full lg:w-[740px] mx-auto pt-[8rem]"
         >
-          <h2 className="text-3xl font-semibold text-[#111827] mb-[3rem] flex gap-x-3 items-center">
+          <h2 className="text-3xl font-semibold text-[#111827] mb-[3rem] flex gap-x-3 items-center dark:text-veryLightGrayishBlue">
             <JobIcon className="size-8" />
             {languageToggle ? "Work Experience" : "Experiencia Laboral"}
           </h2>
@@ -82,7 +69,7 @@ function App() {
         <!-- ----------------------------- --> 
         */}
         <section id="about" className="w-full lg:w-[740px] mx-auto py-[8rem]">
-          <h2 className="text-3xl font-semibold text-[#111827] mb-7 flex gap-x-3 items-center">
+          <h2 className="text-3xl font-semibold text-[#111827] mb-7 flex gap-x-3 items-center dark:text-veryLightGrayishBlue">
             <JobIcon className="size-8" />
             {languageToggle ? "About Me" : "Acerca de mí"}
           </h2>
