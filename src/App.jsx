@@ -47,7 +47,7 @@ function App() {
 
         <ProjectsSection languageToggle={languageToggle} theme={theme} />
 
-        <ExperienceSection languageToggle={languageToggle} />
+        <ExperienceSection languageToggle={languageToggle} theme={theme} />
 
         <AboutMeSection languageToggle={languageToggle} />
       </main>
