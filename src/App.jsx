@@ -49,7 +49,7 @@ function App() {
 
         <ExperienceSection languageToggle={languageToggle} theme={theme} />
 
-        <AboutMeSection languageToggle={languageToggle} />
+        <AboutMeSection languageToggle={languageToggle} theme={theme} />
       </main>
       <Footer />
     </>
