@@ -5,7 +5,14 @@ import { useState } from "react";
 import SocialPill from "./SocialPill";
 import GitHub from "../assets/Github";
 
-export default function Card({ image, description, title, link, github }) {
+export default function Card({
+  image,
+  description,
+  title,
+  link,
+  github,
+  tags,
+}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -38,12 +45,24 @@ export default function Card({ image, description, title, link, github }) {
         </p>
         <p className="mt-2 text-sm leading-relaxed">{description}</p>
 
-        <div className=" ml-6 mb-4">
+        <div className=" m-4">
           <SocialPill link={github}>
             <GitHub className="size-4 md:size-6 " />
             GitHub
           </SocialPill>
         </div>
+        <ul className="flex gap-x-4 flex-row flex-wrap">
+          {tags.map((tag) => (
+            <li className="pb-4" key={tag.name}>
+              <span
+                className={`flex gap-x-2 border border-[#777a9247] rounded-full text-[0.7rem] ${tag.class} py-2 px-3`}
+              >
+                <tag.icon className="size-[1.2rem] " />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

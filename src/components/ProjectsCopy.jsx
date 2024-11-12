@@ -37,7 +37,7 @@ export default function ProjecsCopy({ languageToggle }) {
       icon: HtmlIcon,
     },
     TAILWIND: {
-      name: "Tailwind CSS",
+      name: "Tailwind",
       class: "text-[#777a92fa]",
       icon: TailwindIcon,
     },
@@ -52,7 +52,7 @@ export default function ProjecsCopy({ languageToggle }) {
       icon: TypescriptIcon,
     },
     EXPRESS: {
-      name: "Express.js",
+      name: "Express",
       class: "text-[#777a92fa]",
       icon: ExpressIcon,
     },
@@ -71,7 +71,7 @@ export default function ProjecsCopy({ languageToggle }) {
       link: "https://pi-countries-frontend-production.up.railway.app/",
       github: "https://github.com/GustavoMunizBarrios/pi-countries-frontend",
       image: CountriesImage,
-      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.EXPRESS, TAGS.POSTGRESQL],
+      tags: [TAGS.REACT, TAGS.EXPRESS, TAGS.POSTGRESQL],
     },
     {
       title: "Rick and Morty wiki",
@@ -81,7 +81,7 @@ export default function ProjecsCopy({ languageToggle }) {
       link: "https://rick-and-morty-frontend-production.up.railway.app/",
       github: "https://github.com/GustavoMunizBarrios/rick-and-morty-",
       image: RickandmortyImage,
-      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.EXPRESS, TAGS.POSTGRESQL],
+      tags: [TAGS.REACT, TAGS.EXPRESS, TAGS.POSTGRESQL],
     },
     {
       title: "TO-DO app",
@@ -91,7 +91,7 @@ export default function ProjecsCopy({ languageToggle }) {
       link: "https://todo-app-one-dun.vercel.app/",
       github: "https://github.com/GustavoMunizBarrios/todo-app",
       image: TodoImage,
-      tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.CSS, TAGS.HTML],
+      tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.TAILWIND],
     },
     {
       title: "Packing List",
@@ -130,20 +130,9 @@ export default function ProjecsCopy({ languageToggle }) {
             title={title}
             link={link}
             github={github}
+            tags={tags}
           />
 
-          {/*  <ul className="flex gap-x-4 flex-row flex-wrap">
-              {tags.map((tag) => (
-                <li className="pb-4" key={tag.name}>
-                  <span
-                    className={`flex gap-x-2 border border-[#777a9247] rounded-full text-sm ${tag.class} py-2 px-3`}
-                  >
-                    <tag.icon className="size-5 " />
-                    {tag.name}
-                  </span>
-                </li>
-              ))}
-            </ul> */}
           {/* iconos de tecnologias usadas */}
         </div>
       ))}
