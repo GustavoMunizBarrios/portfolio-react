@@ -19,7 +19,7 @@ import SocialPill from "./SocialPill";
 import Card from "./Card";
 
 // eslint-disable-next-line react/prop-types
-export default function Projecs({ languageToggle }) {
+export default function ProjecsCopy({ languageToggle }) {
   const TAGS = {
     JAVASCRIPT: {
       name: "JavaScript",
