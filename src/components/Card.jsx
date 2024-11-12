@@ -1,46 +1,40 @@
+import CountriesImage from "../Images/countries_of_the_world.png";
+
+import { useState } from "react";
+
 export default function Card() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div>
-      <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
-        <span className="absolute inset-0 border-2 border-dashed border-black"></span>
+    <section
+      className="relative w-[250px] h-[250px] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-veryLightGrayishBlue"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <img
+        className={`fill-current w-[16rem]  rounded transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ${
+          isHovered ? "scale-0" : "scale-100"
+        }`}
+        src={CountriesImage}
+        alt={`Screenshot of the project`}
+      />
 
-        <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-          <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="size-10 sm:size-12"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-
-            <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-              Go around the world
-            </h2>
-          </div>
-
-          <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-            <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-              Go around the world
-            </h3>
-
-            <p className="mt-4 text-sm sm:text-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate, praesentium voluptatem omnis atque culpa repellendus.
-            </p>
-
-            <p className="mt-8 font-bold">Read more</p>
-          </div>
-        </div>
-      </a>
-      ;
-    </div>
+      {/* Contenido de texto: inicialmente escondido y visible en hover */}
+      <div
+        className="absolute top-0 left-0 w-full h-full p-5 box-border transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] bg-veryLightGrayishBlue text-veryDarkBlue"
+        style={{
+          transform: isHovered ? "rotateX(0deg)" : "rotateX(90deg)",
+          transformOrigin: "bottom",
+          backfaceVisibility: "hidden",
+        }}
+      >
+        <p className="m-0 pl-1 text-2xl font-bold">Lorem Ipsum</p>
+        <p className="mt-2 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
+          justo vel lorem tincidunt ultrices at non nunc. Donec in sapien
+          viverra, tincidunt augue id, efficitur massa.
+        </p>
+      </div>
+    </section>
   );
 }

@@ -45,7 +45,31 @@ export default {
     fontFamily: {
       display: ["Josefin Sans", "normal"],
     },
-    extend: {},
+    extend: {
+      transformOrigin: {
+        bottom: "bottom",
+      },
+      transitionDuration: {
+        600: "600ms",
+        800: "800ms",
+      },
+      keyframes: {
+        rotateXIn: {
+          "0%": { transform: "rotateX(90deg)" },
+          "100%": { transform: "rotateX(0deg)" },
+        },
+        rotateXOut: {
+          "0%": { transform: "rotateX(0deg)" },
+          "100%": { transform: "rotateX(90deg)" },
+        },
+      },
+      animation: {
+        "rotate-x-in":
+          "rotateXIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards",
+        "rotate-x-out":
+          "rotateXOut 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards",
+      },
+    },
   },
   plugins: [],
 };
