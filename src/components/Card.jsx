@@ -1,8 +1,11 @@
-import CountriesImage from "../Images/countries_of_the_world.png";
+/* eslint-disable react/prop-types */
+//import CountriesImage from "../Images/countries_of_the_world.png";
 
 import { useState } from "react";
+import SocialPill from "./SocialPill";
+import GitHub from "../assets/Github";
 
-export default function Card() {
+export default function Card({ image, description, title, link, github }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -15,8 +18,8 @@ export default function Card() {
         className={`fill-current w-[16rem]  rounded transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ${
           isHovered ? "scale-0" : "scale-100"
         }`}
-        src={CountriesImage}
-        alt={`Screenshot of the project`}
+        src={image}
+        alt={`Screenshot of the project ${title}`}
       />
 
       {/* Contenido de texto: inicialmente escondido y visible en hover */}
@@ -28,12 +31,19 @@ export default function Card() {
           backfaceVisibility: "hidden",
         }}
       >
-        <p className="m-0 pl-1 text-2xl font-bold">Lorem Ipsum</p>
-        <p className="mt-2 text-sm leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae
-          justo vel lorem tincidunt ultrices at non nunc. Donec in sapien
-          viverra, tincidunt augue id, efficitur massa.
+        <p className="m-0 pl-1 text-2xl font-bold">
+          <a href={link} className="hover:underline">
+            {title}
+          </a>
         </p>
+        <p className="mt-2 text-sm leading-relaxed">{description}</p>
+
+        <div className=" ml-6 mb-4">
+          <SocialPill link={github}>
+            <GitHub className="size-4 md:size-6 " />
+            GitHub
+          </SocialPill>
+        </div>
       </div>
     </section>
   );
