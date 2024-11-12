@@ -10,7 +10,7 @@ export default function Card({ image, description, title, link, github }) {
 
   return (
     <section
-      className="relative w-[250px] h-[250px] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-veryLightGrayishBlue"
+      className="relative w-[22rem] h-[20rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-veryLightGrayishBlue"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

@@ -121,9 +121,9 @@ export default function ProjecsCopy({ languageToggle }) {
     },
   ];
   return (
-    <>
+    <article className="w-full flex gap-4 flex-wrap items-center justify-center">
       {PROJECTS.map(({ image, title, description, tags, link, github }) => (
-        <article className="w-full flex gap-4 flex-wrap" key={title}>
+        <div key={title}>
           <Card
             image={image}
             description={description}
@@ -145,8 +145,8 @@ export default function ProjecsCopy({ languageToggle }) {
               ))}
             </ul> */}
           {/* iconos de tecnologias usadas */}
-        </article>
+        </div>
       ))}
-    </>
+    </article>
   );
 }
