@@ -1,4 +1,5 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+/* ICONS */
 import JavascriptIcon from "../assets/JavascriptIcon";
 import CssIcon from "../assets/CssIcon";
 import HtmlIcon from "../assets/HtmlIcon";
@@ -7,18 +8,15 @@ import ReactIcon from "../assets/ReactIcon";
 import TypescriptIcon from "../assets/TypescriptIcon";
 import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
-import Github from "../assets/Github";
-
+/* IMAGES OF PROJECTS */
 import CountriesImage from "../Images/countries_of_the_world.png";
 import RickandmortyImage from "../Images/rickandmorty_wbg_compress.png";
 import CustomcraftImage from "../Images/customcraft01.png";
 import TravelImage from "../Images/travel-list-withoutBG-compress.png";
 import TodoImage from "../Images/TO-DO app.png";
 
-import SocialPill from "./SocialPill";
 import Card from "./Card";
 
-// eslint-disable-next-line react/prop-types
 export default function ProjecsCopy({ languageToggle }) {
   const TAGS = {
     JAVASCRIPT: {
@@ -66,8 +64,8 @@ export default function ProjecsCopy({ languageToggle }) {
     {
       title: "Countries of the world",
       description: languageToggle
-        ? "Project that gathers an extensive database with information of all the countries of the world, from its population to its extension, you can also save information about the activities that you can do in each of the countries. The application is fully responsive."
-        : "Proyecto que recoge una extensa base de datos con información de todos los países del mundo, desde su población hasta su extensión, también puedes guardar información sobre las actividades que puedes realizar en cada uno de los países. La aplicación es totalmente responsive",
+        ? "Project with a database of countries, covering everything from their population to their size, where you can save information about the activities available in each country."
+        : "Proyecto con una base de datos de países, abarcando desde su población hasta su extensión, donde puedes guardar información sobre las actividades disponibles en cada país.",
       link: "https://pi-countries-frontend-production.up.railway.app/",
       github: "https://github.com/GustavoMunizBarrios/pi-countries-frontend",
       image: CountriesImage,
@@ -81,13 +79,13 @@ export default function ProjecsCopy({ languageToggle }) {
       link: "https://rick-and-morty-frontend-production.up.railway.app/",
       github: "https://github.com/GustavoMunizBarrios/rick-and-morty-",
       image: RickandmortyImage,
-      tags: [TAGS.REACT, TAGS.EXPRESS, TAGS.POSTGRESQL],
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.EXPRESS, TAGS.POSTGRESQL],
     },
     {
       title: "TO-DO app",
       description: languageToggle
-        ? "The TO-DO app is great for all those activities you can't forget. From feeding your dog to grocery shopping, don't miss a thing with this app."
-        : "La aplicación TO-DO es genial para todas esas actividades que no puedes olvidar. Desde dar de comer al perro hasta hacer la compra, que no se te pase nada con esta app",
+        ? "A simple and aesthetic To-do app, you can create tasks, delete them and filter them, day and night modes for a better user experience."
+        : "Una aplicación To-do sencilla y estetica, puedes crear tareas, eliminarlas y filtrarlas, modos de día y de noche para una mejor experiencia de usuario.",
       link: "https://todo-app-one-dun.vercel.app/",
       github: "https://github.com/GustavoMunizBarrios/todo-app",
       image: TodoImage,
@@ -96,12 +94,12 @@ export default function ProjecsCopy({ languageToggle }) {
     {
       title: "Packing List",
       description: languageToggle
-        ? "Travel List is a perfect application for those trips where you can't forget anything. It records the amount and items you need, you can mark them as packed or delete them if you have made a mistake. You can also sort them by description or status. At the bottom you can see how many items you have left to pack."
-        : "Travel List es una aplicación perfecta para esos viajes en los que no puedes olvidar nada. Registra la cantidad y los artículos que necesitas, puedes marcarlos como empaquetados o borrarlos si te has equivocado.También puedes ordenarlos por descripción o estado.En la parte inferior puedes ver cuántos artículos te quedan por empaquetar",
+        ? "Travel List is an app to make sure you pack everything you need on your travels. Record the quantity and items you need, you can mark them as packed or delete them. You can also sort them by description or status."
+        : "Travel List es una aplicación para que no falte nada en tus viajes. Registra la cantidad y los artículos que necesitas, puedes marcarlos como empaquetados o borrarlos.También puedes ordenarlos por descripción o estado.",
       link: "https://travel-list-pi-two.vercel.app/",
       github: "https://github.com/GustavoMunizBarrios/travel-list",
       image: TravelImage,
-      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.HTML],
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS],
     },
     {
       title: "Custom Craft",
@@ -132,8 +130,6 @@ export default function ProjecsCopy({ languageToggle }) {
             github={github}
             tags={tags}
           />
-
-          {/* iconos de tecnologias usadas */}
         </div>
       ))}
     </article>
