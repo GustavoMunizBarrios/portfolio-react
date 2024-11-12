@@ -4,6 +4,7 @@
 import { useState } from "react";
 import SocialPill from "./SocialPill";
 import GitHub from "../assets/Github";
+import { HiExternalLink } from "react-icons/hi";
 
 export default function Card({
   image,
@@ -31,16 +32,19 @@ export default function Card({
 
       {/* Contenido de texto: inicialmente escondido y visible en hover */}
       <div
-        className="absolute top-0 left-0 w-full h-full p-5 box-border transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] bg-[#f3f4f6] text-veryDarkBlue dark:bg-[#2a2c34]"
+        className="absolute top-0 left-0 w-full h-full p-5 box-border transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] bg-[#f3f4f6] text-veryDarkBlue dark:bg-[#2a2c34] dark:text-veryLightGrayishBlue"
         style={{
           transform: isHovered ? "rotateX(0deg)" : "rotateX(90deg)",
           transformOrigin: "bottom",
           backfaceVisibility: "hidden",
         }}
       >
-        <p className="m-0 pl-1 text-2xl font-bold">
-          <a href={link} className="hover:underline">
+        <p className="m-0 pl-1 text-2xl font-bold group hover:underline">
+          <a href={link} className="flex items-center">
             {title}
+            <span className="text-veryDarkBlue dark:text-veryLightGrayishBlue ml-2 hidden group-hover:inline">
+              <HiExternalLink />
+            </span>
           </a>
         </p>
         <p className="mt-2 text-sm leading-relaxed">{description}</p>
