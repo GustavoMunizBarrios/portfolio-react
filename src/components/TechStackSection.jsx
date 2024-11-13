@@ -74,7 +74,7 @@ export default function TechStackSection({ languageToggle }) {
           {techStack.map((tech, index) => (
             <a
               key={index}
-              className=" dark:bg-[#2a2c34] bg-[#f3f4f6] grid w-full min-w-[10rem] transform cursor-pointer place-items-center rounded-xl px-3 py-2 transition-all hover:scale-105 hover:bg-[#2a2c34] hover:bg-opacity-25"
+              className=" dark:bg-[#2a2c34] bg-[#f3f4f6] grid w-full min-w-[8rem] sm:min-w-[10rem] transform cursor-pointer place-items-center rounded-xl px-3 py-2 transition-all hover:scale-110 hover:bg-[#2a2c34] dark:hover:bg-[#737881] hover:bg-opacity-25"
               href={tech.href}
               title={tech.title}
             >
