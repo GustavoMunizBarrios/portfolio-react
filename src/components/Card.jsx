@@ -18,7 +18,7 @@ export default function Card({
 
   return (
     <section
-      className="relative w-[22rem] h-[20rem] xl:w-[31rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-[#f3f4f6] dark:bg-[#2a2c34]"
+      className=" relative w-[22rem] h-[20rem] xl:w-[31rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-[#f3f4f6] dark:bg-[#2a2c34]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
