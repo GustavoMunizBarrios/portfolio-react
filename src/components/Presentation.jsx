@@ -7,8 +7,8 @@ import SocialPill from "./SocialPill";
 
 export default function Presentation({ languageToggle }) {
   return (
-    <>
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+    <div className="xl:w-[1080px]">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
         {languageToggle ? "Hey, I'm Gustavo" : "Hola, soy Gustavo"}{" "}
         <a
           href="https://www.linkedin.com/in/developer-gustavo-mu%C3%B1iz-barrios-86708b121/"
@@ -21,7 +21,7 @@ export default function Presentation({ languageToggle }) {
           </Badge>
         </a>
       </h1>
-      <h2 className="text-xl lg:text-2xl text-wrap max-w-[700px]">
+      <h2 className="text-xl lg:text-2xl text-wrap max-w-[700px] xl:max-w-[1000px]">
         {languageToggle ? "Welcome! I'm a" : "¡Bienvenido! Soy un"}{" "}
         <span className="font-bold text-[#EF8354]">
           {languageToggle ? "Web Developer " : "Desarrollador Web "}
@@ -50,6 +50,6 @@ export default function Presentation({ languageToggle }) {
           Email
         </SocialPill>
       </nav>
-    </>
+    </div>
   );
 }

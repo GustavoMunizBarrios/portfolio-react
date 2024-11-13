@@ -25,7 +25,7 @@ export default function Header({
 
   return (
     <header
-      className="sticky top-0 z-20 flex justify-center items-center py-5 w-[100%] mx-auto
+      className="sticky top-0 z-20 flex justify-center items-center py-5 w-[100%]  mx-auto
             text-lg bg-opacity-50 backdrop-blur-[10px] border-b border-black dark:border-githubThemeSecondary"
     >
       <div className={isOpenStyle}>
