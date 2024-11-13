@@ -18,12 +18,12 @@ export default function Card({
 
   return (
     <section
-      className="relative w-[22rem] h-[20rem] xl:w-[33rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-[#f3f4f6] dark:bg-[#2a2c34]"
+      className="relative w-[22rem] h-[20rem] xl:w-[31rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-[#f3f4f6] dark:bg-[#2a2c34]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        className={`fill-current w-[22rem] xl:w-[33rem]  rounded transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ${
+        className={`fill-current w-[22rem] xl:w-[31rem]  rounded transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ${
           isHovered ? "scale-0" : "scale-100"
         }`}
         src={image}
@@ -32,7 +32,7 @@ export default function Card({
 
       {/* Contenido de texto: inicialmente escondido y visible en hover */}
       <div
-        className="absolute top-0 left-0 w-full h-full p-5 box-border transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] bg-[#f3f4f6] text-veryDarkBlue dark:bg-[#2a2c34] dark:text-veryLightGrayishBlue"
+        className="absolute top-0 left-0 w-full h-full p-5 box-border transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] bg-opacity-50 backdrop-blur-[10px] bg-[#f3f4f6] text-veryDarkBlue dark:bg-[#2a2c34] dark:text-veryLightGrayishBlue"
         style={{
           transform: isHovered ? "rotateX(0deg)" : "rotateX(90deg)",
           transformOrigin: "bottom",

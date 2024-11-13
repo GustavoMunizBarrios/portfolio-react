@@ -4,7 +4,10 @@ import profileCompress from "../Images/profileCompress.png";
 
 export default function AboutMeSection({ languageToggle, theme }) {
   return (
-    <section id="about" className="w-full lg:w-[740px] mx-auto py-[8rem]">
+    <section
+      id="about"
+      className="w-full lg:w-[740px] xl:w-[1080px]  mx-auto py-[8rem]"
+    >
       <h2 className="text-3xl font-semibold text-[#111827] mb-7 flex gap-x-3 items-center dark:text-veryLightGrayishBlue">
         <JobIcon className="size-8" theme={theme} />
         {languageToggle ? "About Me" : "Acerca de mí"}
