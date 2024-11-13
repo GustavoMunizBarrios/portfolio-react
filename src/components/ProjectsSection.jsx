@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import ProjectsIcon from "../assets/ProjectsIcon";
 //import Projecs from "./Projects";
-import ProjectsCopy from "./ProjectsCopy";
+import Projects from "./Projects";
 
 export default function ProjectsSection({ languageToggle, theme }) {
   return (
@@ -16,7 +16,7 @@ export default function ProjectsSection({ languageToggle, theme }) {
         />
         {languageToggle ? "Projects" : "Proyectos"}
       </h2>
-      <ProjectsCopy languageToggle={languageToggle} />
+      <Projects languageToggle={languageToggle} />
     </section>
   );
 }
