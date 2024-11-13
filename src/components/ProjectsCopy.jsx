@@ -9,11 +9,11 @@ import TypescriptIcon from "../assets/TypescriptIcon";
 import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
 /* IMAGES OF PROJECTS */
-import CountriesImage from "../Images/countries_of_the_world.png";
-import RickandmortyImage from "../Images/rickandmorty_wbg_compress.png";
-import CustomcraftImage from "../Images/customcraft01.png";
-import TravelImage from "../Images/travel-list-withoutBG-compress.png";
-import TodoImage from "../Images/TO-DO app.png";
+import CountriesImage from "../Images/countriesImage.png";
+import RickandmortyImage from "../Images/rickImage.png";
+import CustomcraftImage from "../Images/customImage.png";
+import TravelImage from "../Images/packingImage.png";
+import TodoImage from "../Images/todoImage.png";
 
 import Card from "./Card";
 
@@ -119,7 +119,7 @@ export default function ProjecsCopy({ languageToggle }) {
     },
   ];
   return (
-    <article className="w-full flex gap-4 flex-wrap items-center justify-center">
+    <article className="w-full lg:w-[740px] xl:w-[1080px] flex gap-4 xl:gap-6 flex-wrap items-center justify-center">
       {PROJECTS.map(({ image, title, description, tags, link, github }) => (
         <div key={title}>
           <Card

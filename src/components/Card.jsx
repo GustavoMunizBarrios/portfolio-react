@@ -18,12 +18,12 @@ export default function Card({
 
   return (
     <section
-      className="relative w-[22rem] h-[20rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-[#f3f4f6] dark:bg-[#2a2c34]"
+      className="relative w-[22rem] h-[20rem] xl:w-[33rem] rounded-lg flex items-center justify-center overflow-hidden transition-transform duration-800 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:scale-105 hover:shadow-lg bg-[#f3f4f6] dark:bg-[#2a2c34]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        className={`fill-current w-[16rem]  rounded transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ${
+        className={`fill-current w-[22rem] xl:w-[33rem]  rounded transition-transform duration-600 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] ${
           isHovered ? "scale-0" : "scale-100"
         }`}
         src={image}
@@ -59,7 +59,7 @@ export default function Card({
           {tags.map((tag) => (
             <li className="pb-4" key={tag.name}>
               <span
-                className={`flex gap-x-2 border border-[#777a9247] rounded-full text-[0.7rem] ${tag.class} py-2 px-3`}
+                className={`flex gap-x-2 border border-[#777a9247] rounded-full text-[0.7rem] xl:text-[0.9rem] ${tag.class} py-2 px-3`}
               >
                 <tag.icon className="size-[1.2rem] " />
                 {tag.name}

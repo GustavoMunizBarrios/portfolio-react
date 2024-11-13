@@ -42,7 +42,7 @@ function App() {
         toggleTheme={toggleTheme}
         theme={theme}
       />
-      <main className="w-full lg:w-[740px] mx-auto px-4 pt-[6rem] smm:px-3 mdm:px-10 ">
+      <main className="w-full lg:w-[740px] xl:w-[1080px] mx-auto px-4 pt-[6rem] smm:px-3 mdm:px-10 ">
         <Presentation languageToggle={languageToggle} />
 
         <ProjectsSection languageToggle={languageToggle} theme={theme} />
