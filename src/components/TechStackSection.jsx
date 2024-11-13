@@ -18,32 +18,44 @@ export default function TechStackSection({ languageToggle }) {
       href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       title: "JavaScript",
     },
-    { icon: <CssIcon className="size-[5rem]" />, href: "#", title: "CSS" },
-    { icon: <HtmlIcon className="size-[5rem]" />, href: "#", title: "HTML" },
+    {
+      icon: <CssIcon className="size-[5rem]" />,
+      href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      title: "CSS",
+    },
+    {
+      icon: <HtmlIcon className="size-[5rem]" />,
+      href: "https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics",
+      title: "HTML",
+    },
     {
       icon: <TailwindIcon className="size-[5rem]" />,
-      href: "#",
+      href: "https://tailwindcss.com/",
       title: "Tailwind CSS",
     },
-    { icon: <ReactIcon className="size-[5rem]" />, href: "#", title: "React" },
+    {
+      icon: <ReactIcon className="size-[5rem]" />,
+      href: "https://react.dev/",
+      title: "React",
+    },
     {
       icon: <TypescriptIcon className="size-[5rem]" />,
-      href: "#",
+      href: "https://www.typescriptlang.org/",
       title: "TypeScript",
     },
     {
       icon: <ExpressIcon className="size-[5rem]" />,
-      href: "#",
+      href: "https://expressjs.com/",
       title: "Express",
     },
     {
       icon: <PostgreSQL className="size-[5rem]" />,
-      href: "#",
+      href: "https://www.postgresql.org/",
       title: "PostgreSQL",
     },
     {
       icon: <SupabaseIcon className="size-[5rem]" />,
-      href: "#",
+      href: "https://supabase.com/",
       title: "Supabase",
     },
   ];
