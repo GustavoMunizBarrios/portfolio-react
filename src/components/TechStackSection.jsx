@@ -9,36 +9,42 @@ import ReactIcon from "../assets/ReactIcon";
 import TypescriptIcon from "../assets/TypescriptIcon";
 import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
+import SupabaseIcon from "../assets/SupabaseIcon";
 
 export default function TechStackSection({ languageToggle }) {
   const techStack = [
     {
-      icon: <JavascriptIcon className="size-[6rem]" />,
+      icon: <JavascriptIcon className="size-[5rem]" />,
       href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       title: "JavaScript",
     },
-    { icon: <CssIcon className="size-[6rem]" />, href: "#", title: "CSS" },
-    { icon: <HtmlIcon className="size-[6rem]" />, href: "#", title: "HTML" },
+    { icon: <CssIcon className="size-[5rem]" />, href: "#", title: "CSS" },
+    { icon: <HtmlIcon className="size-[5rem]" />, href: "#", title: "HTML" },
     {
-      icon: <TailwindIcon className="size-[6rem]" />,
+      icon: <TailwindIcon className="size-[5rem]" />,
       href: "#",
       title: "Tailwind CSS",
     },
-    { icon: <ReactIcon className="size-[6rem]" />, href: "#", title: "React" },
+    { icon: <ReactIcon className="size-[5rem]" />, href: "#", title: "React" },
     {
-      icon: <TypescriptIcon className="size-[6rem]" />,
+      icon: <TypescriptIcon className="size-[5rem]" />,
       href: "#",
       title: "TypeScript",
     },
     {
-      icon: <ExpressIcon className="size-[6rem]" />,
+      icon: <ExpressIcon className="size-[5rem]" />,
       href: "#",
       title: "Express",
     },
     {
-      icon: <PostgreSQL className="size-[6rem]" />,
+      icon: <PostgreSQL className="size-[5rem]" />,
       href: "#",
       title: "PostgreSQL",
+    },
+    {
+      icon: <SupabaseIcon className="size-[5rem]" />,
+      href: "#",
+      title: "Supabase",
     },
   ];
 
@@ -50,13 +56,13 @@ export default function TechStackSection({ languageToggle }) {
       </h2>
       <div className="flex items-center justify-center">
         <div
-          className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4 xl:grid-cols-5 xl:gap-[3rem]"
+          className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4 xl:grid-cols-5 xl:gap-[3rem] "
           id="frameworks-integration"
         >
           {techStack.map((tech, index) => (
             <a
               key={index}
-              className="grid w-full min-w-[10rem] transform cursor-pointer place-items-center rounded-xl border border-blue-gray-50 bg-white px-3 py-2 transition-all hover:scale-105 hover:border-blue-gray-100 hover:bg-blue-gray-50 hover:bg-opacity-25"
+              className=" bg-[#2a2c34] grid w-full min-w-[10rem] transform cursor-pointer place-items-center rounded-xl px-3 py-2 transition-all hover:scale-105 hover:bg-[#2a2c34] hover:bg-opacity-25"
               href={tech.href}
               title={tech.title}
             >
