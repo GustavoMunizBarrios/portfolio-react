@@ -6,6 +6,7 @@ import Presentation from "./components/Presentation";
 import ProjectsSection from "./components/ProjectsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import AboutMeSection from "./components/AboutMeSection";
+import TechStackSection from "./components/TeckStackSection";
 
 function App() {
   const [languageToggle, setLanguageToggle] = useState(true);
@@ -44,6 +45,8 @@ function App() {
       />
       <main className="w-full lg:w-[740px] xl:w-[1080px] mx-auto px-4 pt-[6rem] smm:px-3 mdm:px-10 ">
         <Presentation languageToggle={languageToggle} />
+
+        <TechStackSection />
 
         <ProjectsSection languageToggle={languageToggle} theme={theme} />
 
