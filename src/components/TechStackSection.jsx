@@ -10,6 +10,7 @@ import TypescriptIcon from "../assets/TypescriptIcon";
 import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
 import SupabaseIcon from "../assets/SupabaseIcon";
+import NodejsIcon from "../assets/NodejsIcon";
 
 export default function TechStackSection({ languageToggle }) {
   const techStack = [
@@ -57,6 +58,11 @@ export default function TechStackSection({ languageToggle }) {
       icon: <SupabaseIcon className="size-[5rem]" />,
       href: "https://supabase.com/",
       title: "Supabase",
+    },
+    {
+      icon: <NodejsIcon className="size-[5rem]" />,
+      href: "",
+      title: "Node JS",
     },
   ];
 
