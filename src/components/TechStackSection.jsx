@@ -11,6 +11,7 @@ import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
 import SupabaseIcon from "../assets/SupabaseIcon";
 import NodejsIcon from "../assets/NodejsIcon";
+import StyledComponentsIcon from "../assets/StyledComponentsIcon";
 
 export default function TechStackSection({ languageToggle }) {
   const techStack = [
@@ -23,6 +24,11 @@ export default function TechStackSection({ languageToggle }) {
       icon: <TypescriptIcon className="size-[5rem]" />,
       href: "https://www.typescriptlang.org/",
       title: "TypeScript",
+    },
+    {
+      icon: <StyledComponentsIcon className="w-[6rem] h-[5rem]" />,
+      href: "https://styled-components.com/",
+      title: "Styled Components",
     },
     {
       icon: <CssIcon className="size-[5rem]" />,

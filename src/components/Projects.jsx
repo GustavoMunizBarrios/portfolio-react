@@ -8,6 +8,7 @@ import ReactIcon from "../assets/ReactIcon";
 import TypescriptIcon from "../assets/TypescriptIcon";
 import ExpressIcon from "../assets/ExpressIcon";
 import PostgreSQL from "../assets/PostgreSQL";
+import StyledComponentsIcon from "../assets/StyledComponentsIcon";
 /* IMAGES OF PROJECTS */
 import CountriesImage from "../Images/countriesImage.png";
 import RickandmortyImage from "../Images/rickImage.png";
@@ -29,6 +30,11 @@ export default function Projecs({ languageToggle }) {
       name: "CSS",
       class: "text-[#777a92fa]",
       icon: CssIcon,
+    },
+    STYLEDCOMPONENTS: {
+      name: "Styled Components",
+      class: "text-[#777a92fa]",
+      icon: StyledComponentsIcon,
     },
     HTML: {
       name: "HTML",
