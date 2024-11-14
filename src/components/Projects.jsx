@@ -14,6 +14,7 @@ import RickandmortyImage from "../Images/rickImage.png";
 import CustomcraftImage from "../Images/customImage.png";
 import TravelImage from "../Images/packingImage.png";
 import TodoImage from "../Images/todoImage.png";
+import usepopcornImage from "../Images/usepopcornImage.png";
 
 import Card from "./Card";
 
@@ -69,7 +70,17 @@ export default function Projecs({ languageToggle }) {
       link: "https://pi-countries-frontend-production.up.railway.app/",
       github: "https://github.com/GustavoMunizBarrios/pi-countries-frontend",
       image: CountriesImage,
-      tags: [TAGS.REACT, TAGS.EXPRESS, TAGS.POSTGRESQL],
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.EXPRESS, TAGS.POSTGRESQL],
+    },
+    {
+      title: "usePopcorn",
+      description: languageToggle
+        ? "Search for any movie you're interested in, check out relevant information about it, rate your favorite films and save them to your personal list."
+        : "Busca cualquier película de tu interés, consulta la información relevante sobre ella, califica tus filmes favoritos y guárdalos en tu lista personal.",
+      link: "https://use-popcorn-opal-nine.vercel.app/",
+      github: "https://github.com/GustavoMunizBarrios/usePopcorn",
+      image: usepopcornImage,
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS],
     },
     {
       title: "Rick and Morty wiki",
