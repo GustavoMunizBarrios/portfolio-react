@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 import { TbDeviceDesktopCode } from "react-icons/tb";
@@ -13,7 +14,7 @@ import SupabaseIcon from "../assets/SupabaseIcon";
 import NodejsIcon from "../assets/NodejsIcon";
 import StyledComponentsIcon from "../assets/StyledComponentsIcon";
 
-export default function TechStackSection({ languageToggle }) {
+export default function TechStackSection({ languageToggle, theme }) {
   const techStack = [
     {
       icon: <JavascriptIcon className="size-[5rem]" />,
@@ -52,7 +53,7 @@ export default function TechStackSection({ languageToggle }) {
     },
 
     {
-      icon: <ExpressIcon className="size-[5rem]" />,
+      icon: <ExpressIcon className="size-[5rem]" theme={theme} />,
       href: "https://expressjs.com/",
       title: "Express",
     },
