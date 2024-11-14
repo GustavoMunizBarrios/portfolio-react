@@ -20,6 +20,11 @@ export default function TechStackSection({ languageToggle }) {
       title: "JavaScript",
     },
     {
+      icon: <TypescriptIcon className="size-[5rem]" />,
+      href: "https://www.typescriptlang.org/",
+      title: "TypeScript",
+    },
+    {
       icon: <CssIcon className="size-[5rem]" />,
       href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       title: "CSS",
@@ -39,11 +44,7 @@ export default function TechStackSection({ languageToggle }) {
       href: "https://react.dev/",
       title: "React",
     },
-    {
-      icon: <TypescriptIcon className="size-[5rem]" />,
-      href: "https://www.typescriptlang.org/",
-      title: "TypeScript",
-    },
+
     {
       icon: <ExpressIcon className="size-[5rem]" />,
       href: "https://expressjs.com/",
