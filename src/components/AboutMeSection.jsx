@@ -32,7 +32,7 @@ export default function AboutMeSection({ languageToggle, theme }) {
           <span className="font-bold text-[#1e40af]">Front-end </span>
           {languageToggle
             ? "development. I have experience doing multiple projects and have worked in a real development environment with a team of developers."
-            : ". He ganado experiencia realizando múltiples proyectos y he trabajado en un entorno de desarrollo real con un equipo de desarrolladores."}
+            : ". He ganado experiencia realizando múltiples proyectos y he trabajado en un entorno de desarrollo real junto a un equipo de desarrolladores."}
         </p>
       </div>
     </section>
