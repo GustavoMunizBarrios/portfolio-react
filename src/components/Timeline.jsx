@@ -4,11 +4,31 @@ import JobIcon from "../assets/JobIcon";
 export default function Timeline({ languageToggle }) {
   const experiences = [
     {
+      title: languageToggle
+        ? "Front-end Developer (Project)"
+        : "Desarrollador Front-end (Proyecto)",
+      company: languageToggle
+        ? "Henry, May. 2023 -  Aug. 2023"
+        : "Henry, May. 2023 - Ago. 2023",
+      isLatest: true,
+      responsibilities: [
+        languageToggle
+          ? "I was responsible for the initial planning of the web application, as well as its design and the involved logic."
+          : "Me encargué de la planeación inicial de la aplicación web, así como de su diseño y la lógica involucrada.",
+        languageToggle
+          ? "The Agile methodology was applied for the project development, which allowed for more dynamic and efficient teamwork."
+          : "Se aplicó la metodología Agile para el desarrollo del proyecto, lo que permitió un trabajo en equipo más dinámico y eficiente.",
+        languageToggle
+          ? "The React library was used, applying Tailwind CSS for the styles."
+          : "Se utilizó la librería React aplicando Tailwind CSS para los estilos.",
+      ],
+    },
+    {
       title: languageToggle ? "Project Manager" : "Jefe de Proyectos",
       company: languageToggle
         ? "Bommus de Mexico, May. 2021 -  Aug. 2022"
         : "Bommus de México, May. 2021 - Ago. 2022",
-      isLatest: true,
+      isLatest: false,
       responsibilities: [
         languageToggle
           ? "Together with my team, we developed a new product from a prototype, covering areas such as hardware and software design, commercial viability and quality testing."
