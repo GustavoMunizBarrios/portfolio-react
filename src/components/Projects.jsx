@@ -16,6 +16,7 @@ import CustomcraftImage from "../Images/customImage.png";
 import TravelImage from "../Images/packingImage.png";
 import TodoImage from "../Images/todoImage.png";
 import usepopcornImage from "../Images/usepopcornImage.png";
+import oaknestImage from "../Images/oaknestImage.png";
 
 import Card from "./Card";
 
@@ -68,6 +69,16 @@ export default function Projecs({ languageToggle }) {
     },
   };
   const PROJECTS = [
+    {
+      title: "The Oak Nest",
+      description: languageToggle
+        ? "The Oak Nest is a web application designed for rental cabin owners, providing a convenient platform to manage their properties and reservations. The end users of this application will be The Oak Nest employees, facilitating efficient management of daily operations."
+        : "The Oak Nest es una aplicación web diseñada para propietarios de cabañas de alquiler, que ofrece una plataforma cómoda para gestionar las reservas. Los usuarios finales de esta aplicación serán los empleados de The Oak Nest, la aplicación facilita la gestión eficiente de las operaciones diarias.",
+      link: "https://the-oak-nest.netlify.app/",
+      github: "https://github.com/GustavoMunizBarrios/the-oak-nest",
+      image: oaknestImage,
+      tags: [TAGS.REACT, TAGS.JAVASCRIPT],
+    },
     {
       title: "Countries of the world",
       description: languageToggle
