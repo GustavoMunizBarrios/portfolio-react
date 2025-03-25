@@ -5,12 +5,50 @@ export default function Timeline({ languageToggle }) {
   const experiences = [
     {
       title: languageToggle
-        ? "Front-end Developer (Project)"
-        : "Desarrollador Front-end (Proyecto)",
+        ? "Front-end Developer"
+        : "Desarrollador Front-end ",
+      company: languageToggle
+        ? "No Country, Feb. 2025 -  Present"
+        : "No Country, Feb. 2025 - Actualidad",
+      isLatest: true,
+      responsibilities: [
+        languageToggle
+          ? "Working alongside a team of developers to create web applications, from the initial planning to the design and logic involved."
+          : "Trabajo junto a un equipo de desarrolladores para la creación de aplicaciones web, desde la planificación inicial hasta el diseño y la lógica involucrada.",
+        languageToggle
+          ? "I collaborate in the planning and execution of projects following agile methodologies, ensuring compliance with deadlines and objectives."
+          : "Colaboro en la planificación y ejecución de proyectos siguiendo metodologías ágiles, asegurando el cumplimiento de plazos y objetivos.",
+        languageToggle
+          ? "Implement efficient solutions to ensure the scalability and performance of applications."
+          : "Implemento soluciones eficientes para garantizar la escalabilidad y el rendimiento de las aplicaciones.",
+      ],
+    },
+    {
+      title: languageToggle
+        ? "Freelance Web Developer"
+        : "Desarrollador Web Freelance",
+      company: languageToggle
+        ? "Freelance, Sep. 2023 -  Dec. 2024"
+        : "Freelance, Sep. 2023 - Dic. 2024",
+      isLatest: false,
+      responsibilities: [
+        languageToggle
+          ? "I have worked on customized projects that integrate innovative technical solutions and functional design."
+          : "He trabajado en proyectos personalizados que integran soluciones técnicas innovadoras y diseño funcional.",
+        languageToggle
+          ? "Designed and developed web applications using modern technologies such as React, TypeScript, Supabase and Tailwind CSS."
+          : "Diseñé y desarrollare aplicaciones web utilizando tecnologías modernas como React, TypeScript, Supabase y Tailwind CSS.",
+        languageToggle
+          ? "I worked closely with clients to understand their needs and deliver scalable and optimized solutions."
+          : "Colaboré estrechamente con clientes para comprender sus necesidades y ofrecer soluciones escalables y optimizadas.",
+      ],
+    },
+    {
+      title: languageToggle ? "Web Developer" : "Desarrollador Web ",
       company: languageToggle
         ? "Henry, May. 2023 -  Aug. 2023"
-        : "Henry, May. 2023 - Ago. 2023",
-      isLatest: true,
+        : "Henry (contrato de formación), May. 2023 - Ago. 2023",
+      isLatest: false,
       responsibilities: [
         languageToggle
           ? "I was responsible for the initial planning of the web application, as well as its design and the involved logic."
