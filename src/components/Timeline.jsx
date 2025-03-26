@@ -1,16 +1,25 @@
-import JobIcon from "../assets/JobIcon";
+import { useState } from "react";
+//import JobIcon from "../assets/JobIcon";
+import bommus_logo from "../Images/bommus_logo.jpeg";
+import henry_logo from "../Images/henry_logo.jpeg";
+import noCountry_logo from "../Images/noCountry_logo.jpeg";
+import userCoding_logo from "../Images/user-coding_logo.png";
 
 // eslint-disable-next-line react/prop-types
 export default function Timeline({ languageToggle }) {
+  const [showAll, setShowAll] = useState(false);
+
   const experiences = [
     {
       title: languageToggle
         ? "Front-end Developer"
         : "Desarrollador Front-end ",
       company: languageToggle
-        ? "No Country, Feb. 2025 -  Present"
-        : "No Country, Feb. 2025 - Actualidad",
+        ? "No Country  ---  Feb. 2025 -  Present"
+        : "No Country  ---  Feb. 2025 - Actualidad",
       isLatest: true,
+      companyLogo: noCountry_logo,
+      companyLink: "https://www.nocountry.tech/",
       responsibilities: [
         languageToggle
           ? "Working alongside a team of developers to create web applications, from the initial planning to the design and logic involved."
@@ -28,9 +37,11 @@ export default function Timeline({ languageToggle }) {
         ? "Freelance Web Developer"
         : "Desarrollador Web Freelance",
       company: languageToggle
-        ? "Freelance, Sep. 2023 -  Dec. 2024"
-        : "Freelance, Sep. 2023 - Dic. 2024",
+        ? "Freelance  ---  Sep. 2023 -  Dec. 2024"
+        : "Freelance  ---  Sep. 2023 - Dic. 2024",
       isLatest: false,
+      companyLogo: userCoding_logo,
+      companyLink: "https://portfolio-react-flax-three.vercel.app/",
       responsibilities: [
         languageToggle
           ? "I have worked on customized projects that integrate innovative technical solutions and functional design."
@@ -46,9 +57,11 @@ export default function Timeline({ languageToggle }) {
     {
       title: languageToggle ? "Web Developer" : "Desarrollador Web ",
       company: languageToggle
-        ? "Henry, May. 2023 -  Aug. 2023"
-        : "Henry (contrato de formación), May. 2023 - Ago. 2023",
+        ? "Henry --- May. 2023 -  Aug. 2023"
+        : "Henry (contrato de formación) --- May. 2023 - Ago. 2023",
       isLatest: false,
+      companyLogo: henry_logo,
+      companyLink: "https://www.soyhenry.com/",
       responsibilities: [
         languageToggle
           ? "I was responsible for the initial planning of the web application, as well as its design and the involved logic."
@@ -64,9 +77,11 @@ export default function Timeline({ languageToggle }) {
     {
       title: languageToggle ? "Project Manager" : "Jefe de Proyectos",
       company: languageToggle
-        ? "Bommus de Mexico, May. 2021 -  Aug. 2022"
-        : "Bommus de México, May. 2021 - Ago. 2022",
+        ? "Bommus de Mexico, May. 2021 ---  Aug. 2022"
+        : "Bommus de México, May. 2021 --- Ago. 2022",
       isLatest: false,
+      companyLogo: bommus_logo,
+      companyLink: "https://bommus.net/",
       responsibilities: [
         languageToggle
           ? "Together with my team, we developed a new product from a prototype, covering areas such as hardware and software design, commercial viability and quality testing."
@@ -81,8 +96,10 @@ export default function Timeline({ languageToggle }) {
     },
     {
       title: languageToggle ? "Project Engineer" : "Ingeniero de Proyectos",
-      company: "Bommus de Mexico, Mar. 2021 - Abr. 2021",
+      company: "Bommus de Mexico, Mar. 2021 --- Abr. 2021",
       isLatest: false,
+      companyLogo: bommus_logo,
+      companyLink: "https://bommus.net/",
       responsibilities: [
         languageToggle
           ? "Preparing , scheduling, coordinating and supervising the project, performing overall quality control of the work, assigning responsibilities and mentoring the project team."
@@ -94,35 +111,65 @@ export default function Timeline({ languageToggle }) {
     },
   ];
 
+  const displayedExperiences = showAll ? experiences : experiences.slice(0, 3);
+
   return (
-    <ol className="relative border-s border-[#e5e7eb] ml-3 dark:border-[#374151]">
-      {experiences.map((experience, index) => (
-        <li key={index} className="mb-[3.5rem] ms-8">
-          <span className="absolute flex items-center justify-center w-7 h-7 bg-[#dbeafe] rounded-full -start-3 ring-8 ring-[#fffff] dark:ring-[#18181b]">
-            <JobIcon className="w-4 h-4" />
-          </span>
-          <h3 className="flex items-center mb-1 text-lg font-semibold dark:text-[#fffff]">
-            {experience.title}
-            {experience.isLatest && (
-              <span className="bg-[#dbeafe] text-[#1e40af] text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3 dark:bg-[#1e40af] dark:text-[#93c5fd]">
-                {languageToggle ? "Latest" : "Último"}
-              </span>
-            )}
-          </h3>
-          <time className="block mb-4 text-sm font-normal leading-none text-[#9ca3af] dark:text-[#6b7280]">
-            {experience.company}
-          </time>
-          <p className="mb-4 text-base font-normal text-[#6b7280] text-pretty dark:text-[#a1a1aa]">
-            <ul className="text-[#6b7280] list-disc ml-3 dark:text-[#a1a1aa]">
-              {experience.responsibilities.map((task, taskIndex) => (
-                <li key={taskIndex} className="mb-3">
-                  {task}
-                </li>
-              ))}
-            </ul>
-          </p>
-        </li>
-      ))}
-    </ol>
+    <>
+      <ol className="relative border-s border-[#e5e7eb] ml-3 dark:border-[#374151]">
+        {displayedExperiences.map((experience, index) => (
+          <li key={index} className="mb-[3.5rem] ms-8">
+            <span className="absolute flex items-center justify-center -start-4  ">
+              <a
+                href={experience.companyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <img
+                  src={experience.companyLogo}
+                  alt="Company logo"
+                  className="w-8 h-8 object-contain"
+                />
+              </a>
+            </span>
+            <h3 className="flex items-center mb-1 text-lg font-semibold dark:text-[#fffff]">
+              {experience.title}
+              {experience.isLatest && (
+                <span className="bg-[#dbeafe] text-[#1e40af] text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3 dark:bg-[#1e40af] dark:text-[#93c5fd]">
+                  {languageToggle ? "Latest" : "Último"}
+                </span>
+              )}
+            </h3>
+            <time className="block mb-4 text-sm font-medium leading-none text-[#9ca3af] dark:text-[#6b7280]">
+              {experience.company}
+            </time>
+            <p className="mb-4 text-base font-normal text-[#6b7280] text-pretty dark:text-[#a1a1aa]">
+              <ul className="text-[#6b7280] list-disc ml-3 dark:text-[#a1a1aa]">
+                {experience.responsibilities.map((task, taskIndex) => (
+                  <li key={taskIndex} className="mb-3">
+                    {task}
+                  </li>
+                ))}
+              </ul>
+            </p>
+          </li>
+        ))}
+      </ol>
+
+      {experiences.length > 3 && (
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className="text-[#1E88E5] dark:text-[#42A5F5] hover:underline text-md"
+        >
+          {showAll
+            ? languageToggle
+              ? "Show less"
+              : "Ver menos"
+            : languageToggle
+            ? "Show more..."
+            : "Ver más..."}
+        </button>
+      )}
+    </>
   );
 }
