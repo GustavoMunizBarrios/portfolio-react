@@ -42,7 +42,7 @@ export default function Card({
         <p className="m-0 pl-1 text-2xl font-bold group hover:underline">
           <a href={link} className="flex items-center">
             {title}
-            <span className="text-veryDarkBlue dark:text-veryLightGrayishBlue ml-2 hidden group-hover:inline">
+            <span className="text-veryDarkBlue dark:text-veryLightGrayishBlue ml-2 group-hover:inline">
               <HiExternalLink />
             </span>
           </a>
