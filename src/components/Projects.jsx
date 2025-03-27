@@ -12,7 +12,7 @@ import StyledComponentsIcon from "../assets/StyledComponentsIcon";
 /* IMAGES OF PROJECTS */
 import CountriesImage from "../Images/countriesImage.png";
 import RickandmortyImage from "../Images/rickImage.png";
-import CustomcraftImage from "../Images/customImage.png";
+//import CustomcraftImage from "../Images/customImage.png";
 import TravelImage from "../Images/packingImage.png";
 import TodoImage from "../Images/todoImage.png";
 import usepopcornImage from "../Images/usepopcornImage.png";
@@ -135,7 +135,7 @@ export default function Projecs({ languageToggle }) {
       image: TravelImage,
       tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.CSS],
     },
-    {
+    /* {
       title: "Custom Craft",
       description: languageToggle
         ? "Custom Craft is an online store where you can pre-visualize your clothes in a 3D model with the possibility to customize your own clothes, adding color and size."
@@ -150,7 +150,7 @@ export default function Projecs({ languageToggle }) {
         TAGS.EXPRESS,
         TAGS.POSTGRESQL,
       ],
-    },
+    }, */
   ];
   return (
     <article className="w-full lg:w-[740px] xl:w-[1080px] flex gap-4 xl:gap-6 flex-wrap items-center justify-center">
