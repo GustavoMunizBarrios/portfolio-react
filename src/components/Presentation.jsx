@@ -1,9 +1,6 @@
 /* eslint-disable react/prop-types */
-import GithubIcon from "../assets/GithubIcon";
-import LinkedinIcon from "../assets/LinkedinIcon";
-import MailIcon from "../assets/MailIcon";
 import Badge from "./Badge";
-import SocialPill from "./SocialPill";
+import SocialsPills from "./SocialsPills";
 
 export default function Presentation({ languageToggle }) {
   return (
@@ -31,25 +28,7 @@ export default function Presentation({ languageToggle }) {
           : "con experiencia en ingeniería y pasión por crear soluciones digitales. Tras tres años liderando proyectos, me especialicé en programación web, realizando proyectos en equipo. Busco crear experiencias digitales que marquen la diferencia."}
       </h2>
 
-      <nav className="flex gap-4 mt-5 flex-wrap">
-        {/* LINKEDIN */}
-        <SocialPill link="https://www.linkedin.com/in/developer-gustavo">
-          <LinkedinIcon />
-          LinkedIn
-        </SocialPill>
-
-        {/* GITHUB */}
-        <SocialPill link="https://github.com/GustavoMunizBarrios/">
-          <GithubIcon />
-          GitHub
-        </SocialPill>
-
-        {/* MAIL */}
-        <SocialPill link="mailto:j.gustavomb1984@hotmail.com">
-          <MailIcon />
-          Email
-        </SocialPill>
-      </nav>
+      <SocialsPills />
     </div>
   );
 }

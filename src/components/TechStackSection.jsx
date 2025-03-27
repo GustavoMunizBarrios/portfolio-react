@@ -76,6 +76,10 @@ export default function TechStackSection({ languageToggle, theme }) {
 
   return (
     <section id="teckStack" className="pt-[8rem]">
+      <h2 className="text-3xl font-semibold text-[#1a202c] mb-4 flex gap-x-3 items-center dark:text-veryLightGrayishBlue xl:mb-12">
+        <TbDeviceDesktopCode />
+        {languageToggle ? "Tech Stack" : "Herramientas y Tecnologías"}
+      </h2>
       <div className="flex items-center justify-center">
         <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4 xl:grid-cols-5 xl:gap-[3rem]">
           {techStack.map((tech, index) => (
