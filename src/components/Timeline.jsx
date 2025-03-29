@@ -57,7 +57,7 @@ export default function Timeline({ languageToggle }) {
     {
       title: languageToggle ? "Web Developer" : "Desarrollador Web ",
       company: languageToggle
-        ? "Henry --- May. 2023 -  Aug. 2023"
+        ? "Henry (training contract) --- May. 2023 -  Aug. 2023"
         : "Henry (contrato de formación) --- May. 2023 - Ago. 2023",
       isLatest: false,
       companyLogo: henry_logo,
