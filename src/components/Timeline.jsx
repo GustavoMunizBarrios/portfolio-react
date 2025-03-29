@@ -117,8 +117,8 @@ export default function Timeline({ languageToggle }) {
     <>
       <ol className="relative border-s border-[#e5e7eb] ml-3 dark:border-[#374151]">
         {displayedExperiences.map((experience, index) => (
-          <li key={index} className="mb-[3.5rem] ms-8">
-            <span className="absolute flex items-center justify-center -start-4  ">
+          <li key={index} className="mb-[3.5rem] ms-9">
+            <span className="absolute flex items-center justify-center -start-[18px]  ">
               <a
                 href={experience.companyLink}
                 target="_blank"
@@ -128,7 +128,7 @@ export default function Timeline({ languageToggle }) {
                 <img
                   src={experience.companyLogo}
                   alt="Company logo"
-                  className="w-8 h-8 object-contain"
+                  className="w-9 h-9 object-contain rounded-full"
                 />
               </a>
             </span>
